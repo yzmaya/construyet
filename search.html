@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Busqueda</title>
+   <style>
+  .footer {
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #393b3c;
+   color: white;
+   font-family:  sans-serif;
+   font-size: 15px;
+
+}
+</style>
+
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+     <!--[if lt IE 9]>
+       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+     <![endif]-->
+       <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <!-- header gobmx -->
+<nav class="  navbar-fixed-top" style="background-color: #393c3e; color: white;">
+        <div class="container">
+            
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      
+      </button>
+      <a class="navbar-brand" href="https://www.gob.mx/"><img src="img/gob_mx.jpg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a style="color: white;" href="https://www.gob.mx/tramites">Trámites </a></li>
+        <li><a style="color: white;" href="https://www.gob.mx/gobierno">Gobierno </a></li>
+        <li><a style="color: white;"  href="https://www.gob.mx/participa/inicio">Participa </a></li>
+        <li><a style="color: white;"  href="https://www.gob.mx/busqueda?utf8=%E2%9C%93&site=participa&q="> <span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  
+       
+    </nav>
+    <!--Second nav bar-->
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:50px;height:50px;min-height:50px;background:#fff;border-color:#fff;border-width:0 0 2px;">
+        <div class="container">
+            <div class="navbar-header" style="padding-left: 15px;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" >
+                   CONSTRUYE  T
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav navbar-right navStyle" style="background:#fff;">
+                     <li><a href="HSE.html">HSE</a></li>
+                      <li><a href="Implementación.html">Implementación</a></li>
+                      <li><a href="Lecciones.html">Lecciones</a></li>
+                      <li><a href="Cursos.html">Cursos</a></li>
+                      <li><a href="Otros Materiales.html">Otros materiales</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <div class="container">
+  <div class="row">
+ <br><br><br><br><br><br><br>
+     <div id="custom-search-input">
+                    <div class="input-group col-md-12">
+                        <input type="text" id="t" class="search-query form-control" placeholder="Buscador" />
+                        <span class="input-group-btn">
+                            <button id="btnBuscar" class="btn btn-primary" type="button" >
+                                <span class=" glyphicon glyphicon-search"></span> Buscar
+                            </button>
+                        </span>
+                    </div>
+    </div>
+    <div class="row">
+        <div >
+        <div class="btn-group m-t-20">
+          <button id="btnAbilities" type="button" class="btn btn-primary">Habilidades</button>
+          <button id="btnNewSearch" type="button" class="btn btn-primary">Nueva busqueda</button>
+        </div>
+      </div>
+    </div>
+    <div id="lyrAbilities" class="m-t-20 ">
+
+    </div>
+
+
+    <div id="lyrLessons" class="m-t-20 ">
+      <ul class="nav nav-stacked col-md-4" id="accordion1">
+      </ul>
+      <!-- Detalle lesson-->
+      <div id="detalleSubLesson" class="col-md-8">
+        <div class="col-md-12">
+          <h3 id='titulo_detalle'>
+            h3. Lorem ipsum dolor sit amet.
+          </h3>
+        </div>
+        <div class="col-md-12">
+            <h4>Objetivo:</h4><span id="objetivo_detalle"></span>
+        </div>
+       <div class="col-md-6  m-t-20"> <b>Archivos externos Maestro:</b><hr><span id="external_teacher_detalle"></span></div>
+       <div class="col-md-6  m-t-20"> <b>Archivos externos Estudiante:</b><hr><span id="external_student_detalle"></span></div>
+       <ul class="nav nav-tabs">
+          <li class="active  m-t-20" id="tab_teacher_detalle"><a data-toggle="tab" href="#home">Maestro</a></li>
+          <li class="m-t-20" id="tab_student_detalle"><a data-toggle="tab" href="#menu1">Estudiante</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <iframe id ="pdf_files_teacher" src="" width="100%" height="600px"></iframe>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <iframe id ="pdf_files_student"  src="" width="100%" height="600px"></iframe>
+          </div>
+        </div>
+      </div>
+    <!-- -->
+    <!--Detalle Lesson -->
+    <div id="detalleLesson" class="col-md-8">
+      <div class="col-md-12">
+        <h3 id='titulo_detalle_lesson'>
+          h3. Lorem ipsum dolor sit amet.
+        </h3>
+      </div>
+      <div class="col-md-12">
+          <h4>Objetivo:</h4><span id="objetivo_detalle_lesson"></span>
+      </div>
+    </div>
+    <!-- -->
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+  
+
+<div class="footer">
+<div class="container">
+  <div class="col-sm-4">
+    <br><br>
+    <h5>Enlaces</h5><br>
+
+
+    <a target="_blank" href="http://reformas.gob.mx/" style="color: white;"> Reformas</a><br>
+    <a target="_blank" href="http://portaltransparencia.gob.mx/buscador/search/search.do?method=begin" style="color: white;"> Portal de Obligaciones de Transparencia</a><br>
+    <a target="_blank" href="https://www.infomex.org.mx/gobiernofederal/home.action" style="color: white;"> Sistema Infomex</a><br>
+    <a target="_blank" href="http://inicio.ifai.org.mx/SitePages/ifai.aspx" style="color: white;">INAI</a><br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <img src="img/gob_mx.jpg"> <br> <br> <br> <br>
+  </div>
+  <div class="col-sm-4">
+    <br><br>
+    <h5>¿Qué es gob.mx?</h5><br>
+
+    Es el portal único de trámites, información y participación ciudadana. <a target="_blank" href="https://www.gob.mx/que-es-gobmx" style="color: white;">Leer más</a><br>
+
+    <a target="_blank" href="https://www.gob.mx/en/index" style="color: white;"> English</a><br>
+    <a target="_blank" href="https://www.gob.mx/temas" style="color: white;">Temas</a><br>
+    <a target="_blank" href="https://www.gob.mx/accesibilidad" style="color: white;">Declaración de Accesibilidad</a><br>
+    <a target="_blank" href="https://www.gob.mx/privacidadintegral" style="color: white;">Aviso de privacidad integral</a><br>
+    <a target="_blank" href="https://www.gob.mx/privacidadsimplificado" style="color: white;">Aviso de privacidad simplificado</a><br>
+    <a target="_blank" href="https://www.gob.mx/terminos" style="color: white;">Términos y Condiciones</a><br>
+    <a target="_blank" href="https://www.gob.mx/terminos#medidas-seguridad-informacion" style="color: white;">Política de seguridad</a><br>
+    <a target="_blank" href="http://www.ordenjuridico.gob.mx/" style="color: white;">Marco Jurídico</a><br>
+    <a target="_blank" href="https://www.gob.mx/sitemap" style="color: white;">Mapa de sitio</a><br>
+  </div>
+  <div class="col-sm-4">
+    <br><br>
+    <h5>Contacto</h5><br>
+
+     Mesa de ayuda: dudas e información<br>
+gobmx@funcionpublica.gob.mx<br>
+
+<a target="_blank" href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54" style="color: white;">Denuncia contra servidores públicos</a><br>
+<br>
+
+  </div>
+</div> 
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+
+
+<script>
+
+$(function() {
+  // Handler for .ready() called.
+//  var rutaSite="http://construyete.demo";
+  var rutaSite="https://prueba.23colectivodigital.com";
+  var rutaSite= "https://cors-anywhere.herokuapp.com/https://prueba.23colectivodigital.com/";
+  var lessons=[];
+  var dataLessons=[];
+  var specialElementHandlers = {
+      '#editor': function (element, renderer) {
+          return true;
+      }
+  };
+  var imgData = 'data:image/jpeg;base64,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';
+  getHabilidades();
+  $("#lyrLessons").hide();
+  $("#detalleSubLesson").hide();
+  $("#detalleLesson").hide();
+  $('#btnExportFile').click(function () {
+    var html = "<h1>Mensaje</h1>";
+
+  });
+
+  $(document.body).on('click', '#btnBuscar' ,function(){
+        var lParameter=$("#t").val();
+        if(lParameter.length>3){
+            getBusqueda(lParameter);
+        }
+  });
+  $(document.body).on('click', '.btn_buscar' ,function(){
+        getLessons($(this).data('id'));
+  });
+  $(document.body).on('click', '.element_lesson' ,function(){
+        var lesson_id=$(this).data('lesson');
+        $("#detalleLesson").hide();
+        $("#detalleSubLesson").show(1000);
+        getDetalleLessonSearch(lesson_id);
+  });
+  $(document.body).on('click', '#btnAbilities' ,function(){
+        $("#detalleSubLesson").hide();
+        $("#detalleLesson").hide();
+        $("#lyrLessons").hide(1000);
+        $("#lyrAbilities").show(1000);
+  });
+  $(document.body).on('click', '.click_sublesson' ,function(){
+        $("#detalleLesson").hide();
+        $("#detalleSubLesson").show(1000);
+        getDetalleSublesson($(this).data('lesson'),$(this).data('sublesson'));
+  });
+  $(document.body).on('click', '.click_lesson' ,function(){
+        $("#detalleSubLesson").hide();
+        $("#detalleLesson").show(1000);
+        getDetalleLesson($(this).data('lesson'));
+  });
+  $(document.body).on('click', '#btnChkSubLesson' ,function(){
+        var values = new Array();
+        $.each($("input[name='chkLesson[]']:checked"), function() {
+            values.push({'lesson_id':$(this).data('lesson'),'sublesson_id':$(this).data('sublesson')});
+        });
+        makePDFSearchSublessons(values);
+  });
+  $(document.body).on('click', '#btnChkSubLessonSearch' ,function(){
+        var values = new Array();
+        $.each($("input[name='chkLessonSearch[]']:checked"), function() {
+          console.log({'elemento':$(this)});
+            values.push({'lesson_id':$(this).data('lesson')});
+        });
+        console.log({"Values --->":values});
+        makePDFSearch(values);
+  });
+  function makePDFSearch(lessonIds){
+
+        var doc = new jsPDF();
+        var html ="";
+        var pageInicial=0;
+
+        doc.setFontSize(20);
+        $.each( lessonIds, function( i, item ) {
+            var lesson=lessons[item.lesson_id];
+            console.log({'item':item,'lesson':lesson});
+            if(pageInicial==1){
+                doc.addPage();
+
+            }
+            doc.addImage(imgData, 'JPEG', 20, 10, 25, 13);
+            doc.setLineWidth(.2)
+            doc.line(5, 24, 205, 24)
+            doc.setTextColor(100)
+            doc.setFontSize(18)
+            doc.setFontType('bold')
+            doc.text(15, 30, lesson.lesson_name)
+            doc.setFontSize(16)
+            doc.text(15, 40, lesson.name)
+
+            doc.fromHTML('<h3><b>Objetivo:</b>'+lesson.description+'</h3>',15,40, {
+                  'width': 170,
+                      'elementHandlers': specialElementHandlers
+              });
+            if(lesson.file_teacher!=""){
+                 doc.textWithLink('Archivo PDF', 15, 70, { url: lesson.file_teacher,target:'_blank' });
+            }
+            doc.text(15, 80,"Archivos externos:")
+            var archivoContador =1;
+
+            var posicionY= 90;
+            $.each( lesson.link_teacher, function( index, elementLesson ) {
+                if(elementLesson!==""){
+                    doc.textWithLink('Archivo ' + archivoContador, 15, posicionY, { url: elementLesson,target:'_blank' });
+                    archivoContador++;
+                    posicionY= posicionY+20;
+                }
+            });
+
+            doc.fromHTML(html, 15, 15, {
+                'width': 170,
+                    'elementHandlers': specialElementHandlers
+            });
+            pageInicial=1;
+        });
+        doc.save('exportacion.pdf');
+
+  }
+  function makePDFSearchSublessons(lessonIds){
+
+        var doc = new jsPDF();
+        var html ="";
+        var pageInicial=0;
+
+        doc.setFontSize(20);
+        $.each( lessonIds, function( i, item ) {
+            var lesson=lessons[item.lesson_id][item.sublesson_id];
+            if(pageInicial==1){
+                doc.addPage();
+
+            }
+            doc.addImage(imgData, 'JPEG', 20, 10, 25, 13);
+            doc.setLineWidth(.2)
+            doc.line(5, 24, 205, 24)
+            doc.setTextColor(100)
+            doc.setFontSize(18)
+            doc.setFontType('bold')
+            doc.text(15, 30, dataLessons[item.lesson_id].name)
+            doc.setFontSize(16)
+            doc.text(15, 40, lesson.name)
+
+            doc.fromHTML('<h3><b>Objetivo:</b>'+lesson.description+'</h3>',15,40, {
+                  'width': 170,
+                      'elementHandlers': specialElementHandlers
+              });
+            if(lesson.file_teacher!=""){
+                 doc.textWithLink('Archivo PDF', 15, 70, { url: lesson.file_teacher,target:'_blank' });
+            }
+            doc.text(15, 80,"Archivos externos:")
+            var archivoContador =1;
+
+            var posicionY= 90;
+            $.each( lesson.link_teacher, function( index, elementLesson ) {
+                if(elementLesson!==""){
+                    doc.textWithLink('Archivo ' + archivoContador, 15, posicionY, { url: elementLesson,target:'_blank' });
+                    archivoContador++;
+                    posicionY= posicionY+20;
+                }
+            });
+
+            doc.fromHTML(html, 15, 15, {
+                'width': 170,
+                    'elementHandlers': specialElementHandlers
+            });
+            pageInicial=1;
+        });
+        doc.save('exportacion.pdf');
+
+  }
+  function exportPDF(html="",name="info.pdf"){
+
+        doc.fromHTML(html, 15, 15, {
+            'width': 170,
+                'elementHandlers': specialElementHandlers
+        });
+        doc.save(name);
+  }
+  function getBusqueda(parameter=""){
+        var NONCE = Math.random();
+        var urlService = rutaSite+"/wp-admin/admin-ajax.php?jsoncallback=?";
+        var settings = {
+                  'cache': false,
+                  "async": true,
+                  "url": urlService,
+                  "method": "",
+                  "type":"GET",
+                  "data":{t:parameter, action:'get_search',_ajax_nonce:NONCE}
+              }
+        $( "#accordion1" ).html("");
+        $.ajax(settings).done(function (response) {
+            var elements=[];
+            elemento = '<li class="panel style_lessons"><div class="btn-group"><button id="btnChkSubLessonSearch"  type="button" class="btn btn-primary btn-sm">Exportar lecciones</button><button type="button" class="btn btn-primary btn-sm">Limpiar</button></div></li>';
+              $( "#accordion1" ).append(elemento);
+            $.each( response.data, function( i, item ) {
+                elemento='<li class="list-group-item style_lessons"><input type="checkbox" data-lesson="'+item.id+'"  name="chkLessonSearch[]" class="chbox_lesson" id="cbox_sublesson" value="'+item.id+'">'+ item.name.toString().trim()+'<span class="pull-right glyphicon glyphicon-log-in pointer element_lesson"  data-lesson="'+item.id+'" ></span>';
+                elemento+="</li>";
+
+                $( "#accordion1" ).append(elemento);
+                elements[item.id]=item;
+
+            });
+            lessons = elements;
+          });
+          $("#lyrLessons").show(1000);
+          $("#lyrAbilities").hide(1000);
+  }
+
+  function getHabilidades(){
+    var NONCE = Math.random();
+    var urlService = rutaSite+"/wp-admin/admin-ajax.php?jsoncallback=?&action=get_habilidades&_ajax_nonce="+NONCE;
+    var settings = {
+              'cache': false,
+              "async": true,
+              "url": urlService,
+              "method": ""
+          }
+
+          $.ajax(settings).done(function (response) {
+            $.each( response.data, function( i, item ) {
+              elemento='<div class="col-sm-4 col-md-3"><div class="card"><div class="thumbnail card-element" data-id="'+item.id+'" ><h4 class="card-title">'+item.name +'</h4><div class="col-md-12 p-r-20 b-p-10"><button class="btn btn-primary btn_buscar btn-xs pull-right" type="button" data-id='+item.id+' > Leer mas...</button></div></div></div></div></div>';
+
+                $( "#lyrAbilities" ).append(elemento);
+            });
+          });
+
+    }
+      var txtElement = document.getElementById("t");
+      txtElement.addEventListener("keydown", function (e) {
+          if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+              var lParameter=$("#t").val();
+              if(lParameter.length>3){
+
+                getBusqueda(lParameter);
+              }
+          }
+      });
+    function getDetalleLessonSearch(lessonId=0){
+      var lesson=lessons[lessonId];
+      var settingsPDF="#page=1&zoom=100&view=fitH";
+
+      $("#titulo_detalle").html(lesson.name);
+      $("#objetivo_detalle").html(lesson.description);
+      $("#tab_teacher_detalle").hide();
+      $("#tab_student_detalle").hide();
+      $("#external_teacher_detalle").html(getExternalLinks(lesson.link_teacher));
+      $("#external_student_detalle").html(getExternalLinks(lesson.link_student));
+      if(lesson.file_teacher!=""){
+        $("#tab_teacher_detalle").show();
+        $("#pdf_files_teacher").attr('src',lesson.file_teacher+settingsPDF);
+      }
+    }
+    function getDetalleLesson(lessonId=0){
+      var lesson=dataLessons[lessonId];
+      var settingsPDF="#page=1&zoom=100&view=fitH";
+
+      $("#titulo_detalle_lesson").html(lesson.name);
+      $("#objetivo_detalle_lesson").html(lesson.description);
+
+    }
+  function getDetalleSublesson(lessonId=0, subLessonId=0){
+
+    var subLesson=lessons[lessonId][subLessonId];
+    var settingsPDF="#page=1&zoom=100&view=fitH";
+    $("#titulo_detalle").html(subLesson.name);
+    $("#objetivo_detalle").html(subLesson.description);
+    $("#tab_teacher_detalle").hide();
+    $("#tab_student_detalle").hide();
+    $("#external_teacher_detalle").html(getExternalLinks(subLesson.link_teacher));
+    $("#external_student_detalle").html(getExternalLinks(subLesson.link_student));
+    $("#description_detalle").html(subLesson.description);
+    if(subLesson.file_teacher!=""){
+      $("#tab_teacher_detalle").show();
+      $("#pdf_files_teacher").attr('src',subLesson.file_teacher+settingsPDF);
+    }
+    /*if(subLesson.file_student!=""){
+      $("#tab_student_detalle").show();
+      $("#pdf_files_student").attr('src',subLesson.file_student+settingsPDF);
+    }*/
+
+  }
+  function getLessons(id=0){
+    var NONCE = Math.random();
+    var urlService = rutaSite+"/wp-admin/admin-ajax.php?jsoncallback=?&action=get_lessons&_ajax_nonce="+NONCE;
+    var settings = {
+              'cache': false,
+              "async": true,
+              "url": urlService,
+              "method": "",
+              data:{ability_id:id}
+          }
+
+          $.ajax(settings).done(function (response) {
+            var elementos=[];
+            $( "#accordion1" ).html('');
+            elemento = '<li class="panel style_lessons"><div class="btn-group"><button id="btnChkSubLesson"  type="button" class="btn btn-primary btn-sm">Exportar lecciones</button><button type="button" class="btn btn-primary btn-sm">Limpiar</button></div></li>';
+              $( "#accordion1" ).append(elemento);
+            $.each( response.data, function( i, item ) {
+
+                elemento='<li class="panel style_habilidades"> <a data-toggle="collapse" data-parent="#accordion1" href="#'+item.id+'">'+ item.name+'</a>';
+                elemento +='<ul id="'+item.id+'" class="collapse list-group">';
+                $.each( item.lessons, function( index, lesson ) {
+                    //Lecciones
+                    var subelementos=[];
+                    elemento+='<li class="list-group-item style_lessons"><a data-toggle="collapse" href="#lesson_'+lesson.id+'">'+lesson.name+'</a>';
+                    //<a  class="click_lesson pointer"  data-lesson="'+lesson.id+'" ><span class="pull-right glyphicon glyphicon-log-in"></span></a>
+                    elemento +='<ul id="lesson_'+lesson.id+'" class="collapse list-group">';
+
+                    $.each( lesson.sublessons, function( index, sublesson ) {
+                        //Subelecciones
+                        elemento+='<li class="list-group-item style_sublessons"><input type="checkbox" data-lesson="'+lesson.id+'" data-sublesson="'+sublesson.id+'"  name="chkLesson[]" class="chbox_lesson" id="cbox_sublesson" value="'+sublesson.id+'">'+sublesson.name+'<a data-lesson="'+lesson.id+'" data-sublesson="'+sublesson.id+'" class="click_sublesson pointer"><span class="pull-right glyphicon glyphicon-log-in"></span></a>';
+                        elemento+="</li>";
+                        subelementos[sublesson.id]=sublesson;
+                    });
+                    elemento+='</ul></li>';
+
+                    elementos[lesson.id]=subelementos;
+                    dataLessons[lesson.id]=lesson;
+
+                });
+                elemento+='</ul>';
+              elemento+='</li>';
+              $( "#accordion1" ).append(elemento);
+
+            });
+            $( "#txt_result" ).val($( "#accordion1" ).html());
+            lessons=elementos;
+            $("#lyrLessons").show(1000);
+            $("#lyrAbilities").hide(1000);
+          });
+    }
+    function getExternalLinks(urlFiles){
+          var files="";
+          var contador=1;
+          $.each( urlFiles, function( index, element ) {
+                files+=' <a href="'+element+'" target="_blank"><span class="badge"> '+ contador+' </span></a>';
+                contador++;
+          });
+          return files;
+    }
+});
+</script>
+</body>
+
+</html>

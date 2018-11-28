@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Construye T</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/estilosorg.css">
+</head>
+<style>
+  .footer {
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #393b3c;
+   color: white;
+   font-family:  sans-serif;
+   font-size: 15px;
+
+}
+</style>
+<body>
+<!-- header gobmx -->
+<nav class="  navbar-fixed-top" style="background-color: #393c3e; color: white;">
+        <div class="container">
+            
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      
+      </button>
+      <a class="navbar-brand" href="https://www.gob.mx/"><img src="img/gob_mx.jpg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a style="color: white;" href="https://www.gob.mx/tramites">Trámites </a></li>
+        <li><a style="color: white;" href="https://www.gob.mx/gobierno">Gobierno </a></li>
+        <li><a style="color: white;"  href="https://www.gob.mx/participa/inicio">Participa </a></li>
+        <li><a style="color: white;"  href="https://www.gob.mx/busqueda?utf8=%E2%9C%93&site=participa&q="> <span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  
+       
+    </nav>
+    <!--Second nav bar-->
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:50px;height:50px;min-height:50px;background:#fff;border-color:#eb6e1f;border-width:0 0 2px;">
+        <div class="container">
+            <div class="navbar-header" style="padding-left: 15px;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" >
+                   CONSTRUYE  T
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav navbar-right navStyle" style="background:#fff;">
+                     <li><a href="HSE.html">HSE</a></li>
+                      <li><a href="Implementación.html">Implementación</a></li>
+                      <li><a href="Lecciones.html">Lecciones</a></li>
+                      <li><a href="Cursos.html">Cursos</a></li>
+                      <li><a href="Otros Materiales.html">Otros materiales</a></li>
+                      <li>
+                         <form class="navbar-form navbar-left" action="search.html">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar" style="width: 180px;">
+                            <div class="input-group-btn">
+                              <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </form> 
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<br><br>
+
+
+<br><br>
+<style type="text/css">
+  .botonSIG{
+    width: 100px; 
+    height: 30px; 
+    background-color: black;
+    text-align: center; 
+    cursor: pointer;
+    right: 15px;
+    position: absolute;
+    border-radius: 10px;
+    
+  }
+  .botonSIG a{
+    text-decoration: none;
+    color: white;
+  }
+  .botonATR{
+    width: 100px; 
+    height: 30px; 
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    cursor: pointer;
+    left: 15px;
+    position: absolute;
+    border-radius: 10px;
+  }
+  .botonATR a{
+    text-decoration: none;
+    color: white;
+  }
+  .divselec:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+  }
+  li{
+    list-style:none;
+  }
+  .activa{
+  background-color:lightblue;
+  }
+  .activa2{
+  background-color:white;
+  }
+
+</style>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"><h3>Curso básico Líderes Construye T</h3>
+        <div style="height: 700px; overflow-y: scroll; overflow-x: hidden;">
+        <ul class="nav" id="accordion1">
+            <li class="panel" style="border-style: none;"><a data-toggle="collapse" data-parent="#accordion1" href="#PrimerLink">Programa líderes Construye T</a>
+                <ul id="PrimerLink" class="collapse">
+                    <li><div onclick="cambio1();" class="divselec" id="op1" >Cápsula.- Bienvenida al curso</div></li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#SegundoLink">Recursos de apoyo</a>
+                <ul id="SegundoLink" class="collapse">
+                    <li><div onclick="cambio2();" class="divselec" id="op2" >Mi cuaderno de trabajo</div></li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#TerceroLink">Sesión 1. La importancia de las habilidades socioemocionales</a>
+                <ul id="TerceroLink" class="collapse">
+                    <li><div onclick="cambio3();" class="divselec" id="op3">Guía de aprendizaje sesión 1</div></li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-aLink">1.- Introducción: Los retos de la Educación y la promesa de las Habilidades Socioemocionales</div>
+                      <ul id="sub-aLink" class="collapse">
+                          <li><div onclick="cambio4();" class="divselec" id="op4">Los retos de la educación y la promesa de las HSE (I)</div></li>
+                          <li><div onclick="cambio5();" class="divselec" id="op5">Los retos de la educación y la promesa de las HSE (II)</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-bLink">2.- El Programa Construye T y la importancia de las Habilidades Socioemocionales</div>
+                      <ul id="sub-bLink" class="collapse">
+                          <li><div onclick="cambio6();" class="divselec" id="op6">El programa Construye T y la importancia de las HSE (I)</div></li>
+                          <li><div onclick="cambio7();" class="divselec" id="op7">Los retos de la educación y la promesa de las HSE (II)</div></li>
+                          <li><div onclick="cambio8();" class="divselec" id="op8">Infográfico</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-cLink">3.- Capacitación de Líderes Educativos en Construye T</div>
+                      <ul id="sub-cLink" class="collapse">
+                          <li><div onclick="cambio9();" class="divselec" id="op9">Capacitación de líderes educativos en Construye T</div></li>
+                          <li><div onclick="cambio10();" class="divselec" id="op10">Los fines de la educación en el siglo XXI: una sóla meta</div></li>
+                          <li><div onclick="cambio11();" class="divselec" id="op11">El perfil de Egreso de Educación Media Superior</div></li>
+                          <li><div onclick="cambio12();" class="divselec" id="op12">Las Habilidades Socioemocionales en el Nuevo Modelo Educativo</div></li>
+                      </ul>
+                    </li>
+                    <li onclick="cambio13();" class="divselec" id="op13"><div>Puntos esenciales Sesión 1</div></li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#SubTerceroLink">Material para descargar</div>
+                      <ul id="SubTerceroLink" class="collapse">
+                        <li onclick="cambio14();" class="divselec" id="op14"><div>Las HSE en el NME</div></li>
+                        <li onclick="cambio15();" class="divselec" id="op15"><div>Los fines de la educación en el s.XXI</div></li>
+                        <li onclick="cambio16();" class="divselec" id="op16"><div>Perfil de egreso de EMS</div></li>
+                        <li onclick="cambio17();" class="divselec" id="op17"><div>Evidencia científica de las HSE</div></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#CuartoLink">Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales en los Planteles de Educación Media Superior</a>
+                <ul id="CuartoLink" class="collapse">
+                    <li onclick="cambio18();" class="divselec" id="op18">Guía de aprendizaje sesión 2</li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-dLink">1.- ¿Las habilidades socioemocionales se pueden entrenar?</div>
+                      <ul id="sub-dLink" class="collapse">
+                          <li><div onclick="cambio19();" class="divselec" id="op19">Introducción y bienvenida sesión 2</div></li>
+                          <li><div onclick="cambio20();" class="divselec" id="op20">¿Por qué son importantes las HSE?</div></li>
+                          <li><div onclick="cambio21();" class="divselec" id="op21">¿Cómo se aprenden las Habilidades Socioemocionales?</div></li>
+                          <li><div onclick="cambio22();" class="divselec" id="op22">¿Cómo se enseñan las Habilidades Socioemocionales?</div></li>
+                          <li><div onclick="cambio23();" class="divselec" id="op23">Tabla.- Programas de desarrollo de las Habilidades Socioemocionales en el mundo</div></li>
+                          <li><div onclick="cambio24();" class="divselec" id="op24">Tabla.- Referencias de otros programas de HSE en el mundo.</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-eLink">2.- ¿Qué se ha hecho para el desarrollo de las Habilidades Socioemocionales en México?</div>
+                      <ul id="sub-eLink" class="collapse">
+                          <li><div onclick="cambio25();" class="divselec" id="op25">Un poco de historia...</div></li>
+                          <li><div onclick="cambio26();" class="divselec" id="op26">¿Qué hemos aprendido?</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-fLink">3.- El Programa Construye T 2017</div>
+                      <ul id="sub-fLink" class="collapse">
+                          <li><div onclick="cambio27();" class="divselec" id="op27">Contenidos del Programa Construye T (Conoce T)</div></li>
+                          <li><div onclick="cambio28();" class="divselec" id="op28">Contenidos del Programa Construye T (Relaciona T)</div></li>
+                          <li><div onclick="cambio29();" class="divselec" id="op29">Contenidos del Programa Construye T (Elige T)</div></li>
+                          <li><div onclick="cambio30();" class="divselec" id="op30">¿Por qué elegimos estas habilidades y no otras? Habilidades transversales</div></li>
+                          <li><div onclick="cambio31();" class="divselec" id="op31">Referencias bibliográficas para el desarrollo de programas similares a Construye T en todo el mundo.</div></li>
+                          <li><div onclick="cambio32();" class="divselec" id="op32">Presentación.- 10 cosas que debes saber del Programa Construye T para el ciclo escolar 2017-2018</div></li>
+                          <li><div onclick="cambio33();" class="divselec" id="op33">Infografía.- 10 cosas que debes saber del Programa Construye T para el ciclo escolar 2017-2018</div></li>
+                      </ul>
+                    </li>
+                    <li onclick="cambio34();" class="divselec" id="op34">Puntos esenciales Sesión 2</li>
+                    <li class="panel" style="border-style: none;"><a data-toggle="collapse" href="#SubCuartoLink">Material para descargar</a>
+                      <ul id="SubCuartoLink" class="collapse">
+                        <li onclick="cambio35();" class="divselec" id="op35">Infografía.- Las 10 cosas que debes saber del programa Construye T</li>
+                        <li onclick="cambio36();" class="divselec" id="op36">Presentación.- Las 10 cosas que debes saber del programa Construye T</li>
+                        <li onclick="cambio37();" class="divselec" id="op37">Tabla.- Programas de HSE en el mundo</li>
+                        <li onclick="cambio38();" class="divselec" id="op38">Tabla.- Otros programas de HSE en el mundo (páginas electrónicas)</li>
+                        <li onclick="cambio39();" class="divselec" id="op39">Referencias de otros programas de HSE</li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#QuintoLink">Sesión 3. Las habilidades socioemocionales se pueden entrenar</a>
+                <ul id="QuintoLink" class="collapse">
+                    <li onclick="cambio40();" class="divselec" id="op40">Guía de aprendizaje sesión 3</li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-gLink">1.- Las Habilidades Socioemocionales. ¿Por qué son importantes? ¿Cómo se aprenden y cómo se enseñan?</div>
+                      <ul id="sub-gLink" class="collapse">
+                          <li><div onclick="cambio41();" class="divselec" id="op41">¿Las Habilidades Socioemocionales se pueden entrenar?</div></li>
+                          <li><div onclick="cambio42();" class="divselec" id="op42">Neuroplasticidad</div></li>
+                          <li><div onclick="cambio43();" class="divselec" id="op43">Neuroplasticidad en acción (I)</div></li>
+                          <li><div onclick="cambio44();" class="divselec" id="op44">Neuroplasticidad en acción (II)</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-hLink">2.- Calmar la mente a través del entrenamiento de la atención</div>
+                      <ul id="sub-hLink" class="collapse">
+                          <li><div onclick="cambio45();" class="divselec" id="op45">La mente inquieta (Parte 1)</div></li>
+                          <li><div onclick="cambio46();" class="divselec" id="op46">La mente inquieta (Parte 2)</div></li>
+                          <li><div onclick="cambio47();" class="divselec" id="op47">Regula tu atención para regular tus emociones y tu estrés</div></li>
+                      </ul>
+                    </li>
+                    <li onclick="cambio48();" class="divselec" id="op48">Entrenamiento de la semana.</li>
+                    <li onclick="cambio49();" class="divselec" id="op49">Puntos esenciales Sesión 3</li>
+                    <li class="panel" style="border-style: none;"><a data-toggle="collapse" href="#SubQuintoLink">Material para descargar</a>
+                      <ul id="SubQuintoLink" class="collapse">
+                        <li onclick="cambio50();" class="divselec" id="op50">Atender la respiración</li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#SextoLink">Sesión 4. Primeros pasos para arrancar el programa</a>
+                <ul id="SextoLink" class="collapse">
+                    <li onclick="cambio51();" class="divselec id="op51">Guía de aprendizaje sesión 4</li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-iLink">1.- Lo esencial sobre la estrategia de implementación</div>
+                      <ul id="sub-iLink" class="collapse">
+                          <li><div onclick="cambio52();" class="divselec" id="op52">Lo esencial sobre la estrategia de implementación</div></li>
+                          <li><div onclick="cambio53();" class="divselec" id="op53">Las Habilidades Socioemocionales en el NME.</div></li>
+                          <li><div onclick="cambio54();" class="divselec" id="op54">Para Reflexionar.- La estrategia Construye T</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-jLink">2.- Quiénes y visión</div>
+                      <ul id="sub-jLink" class="collapse">
+                          <li><div onclick="cambio55();" class="divselec" id="op55">Los actores clave del programa: Quiénes (Primera parte)</div></li>
+                          <li><div onclick="cambio56();" class="divselec" id="op56">El papel del docente: Quiénes (Segunda parte)</div></li>
+                          <li><div onclick="cambio57();" class="divselec" id="op57">El papel de directores y tutores Construye T como líderes del programa: Quiénes (Tercera parte)</div></li>
+                          <li><div onclick="cambio58();" class="divselec" id="op58">Visión en cuatro pasos</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-kLink">3.- Materiales, estrategia de capacitación y primeros pasos</div>
+                      <ul id="sub-kLink" class="collapse">
+                          <li><div onclick="cambio59();" class="divselec" id="op59">Materiales y estrategia de capacitación (Primera parte)</div></li>
+                          <li><div onclick="cambio60();" class="divselec" id="op60">Materiales y estrategia de capacitación (Segunda parte)</div></li>
+                          <li><div onclick="cambio61();" class="divselec" id="op61">Primeros pasos</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-lLink">Para saber más...</div>
+                      <ul id="sub-lLink" class="collapse">
+                          <li><div onclick="cambio62();" class="divselec" id="op62">¿Qué es el efecto Pigmalión?</div></li>
+                          <li><div onclick="cambio63();" class="divselec" id="op63">¿Qué es una mentalidad de crecimiento?</div></li>
+                          <li><div onclick="cambio64();" class="divselec" id="op64">Infografía.- Capacitación en Construye T</div></li>
+                          <li><div onclick="cambio65();" class="divselec" id="op65">Preguntas frecuentes acerca del Programa Construye T y su implantación</div></li>
+                          <li><div onclick="cambio66();" class="divselec" id="op66">Perfil, parámetros e indicadores para Docentes y Técnicos Docentes en EMS</div></li>
+                          <li><div onclick="cambio67();" class="divselec" id="op67">Formato de asignación de variaciones del programa Construye T</div></li>
+                      </ul>
+                    </li>
+                    <li onclick="cambio68();" class="divselec" id="op68">Puntos esenciales Sesión 4</li>
+                    <li onclick="cambio69();" class="divselec" id="op69">Cierre de curso</li>
+                    <li class="panel-2" style="border-style: none;"><a data-toggle="collapse" href="#SubSextoLink">Material para descargar</a>
+                      <ul id="SubSextoLink" class="collapse">
+                        <li onclick="cambio70();" class="divselec" id="op70">Perfil, parámetros e indicadores para docentes y técnicos docentes en EMS</li>
+                        <li onclick="cambio71();" class="divselec" id="op71">Visión en cuatro pasos</li>
+                        <li onclick="cambio72();" class="divselec" id="op72">Formato asignación de variaciones</li>
+                        <li onclick="cambio73();" class="divselec" id="op73">Infografía programa Construye T</li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      </div> 
+      </div> 
+      <div class="col-sm-8" >
+        <div><h1>Curso básico líderes Construye T</h1></div>
+        <div><h3 id="textintro"></h3></div>
+        <div><iframe width="100%" height="500" name="vidframe" src="" frameborder="0" allowfullscreen></iframe></div>
+        <!--Programa Líderes Contruye T-->
+        <div class="ocultox" id="oculto1" style="display: none;"><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#SegundoLink" id="cambio2" onclick="cambio2();">Siguiente</a></div></div>
+        <!--Recursos de apoyo-->
+        <div class="ocultox" id="oculto2" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#PrimerLink" id="cambio1r" onclick="cambio1();">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#TerceroLink" id="cambio3" onclick="cambio3();">Siguiente</a></div></div>
+        <!--Sesion 1-->
+        <div class="ocultox" id="oculto3" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#SegundoLink" id="cambio2r" onclick="cambio2();">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-aLink" id="cambio4" onclick="cambio4();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto4" style="display: none;"><div class="botonATR"><a id="cambio3r" data-toggle="collapse" href="#sub-aLink" onclick="cambio3();">Anterior</a></div><div class="botonSIG"><a id="cambio5" onclick="cambio5();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto5" style="display: none;"><div class="botonATR"><a id="cambio4r" onclick="cambio4();">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-bLink" id="cambio6" onclick="cambio6();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto6" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-bLink" id="cambio5r" onclick="cambio5();">Anterior</a></div><div class="botonSIG"><a id="cambio7" onclick="cambio7();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto7" style="display: none;"><div class="botonATR"><a id="cambio6r" onclick="cambio6();">Anterior</a></div><div class="botonSIG"><a id="cambio8" onclick="cambio8();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto8" style="display: none;"><div class="botonATR"><a id="cambio7r" onclick="cambio7(); ">Anterior</a></div><div class="botonSIG"><a id="cambio9" data-toggle="collapse" href="#sub-cLink" onclick="cambio9();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto9" style="display: none;"><div class="botonATR"><a id="cambio8r" onclick="cambio8(); ">Anterior</a></div><div class="botonSIG"><a id="cambio10" onclick="cambio10();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto10" style="display: none;"><div class="botonATR"><a id="cambio9r" onclick="cambio9(); ">Anterior</a></div><div class="botonSIG"><a id="cambio11" onclick="cambio11();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto11" style="display: none;"><div class="botonATR"><a id="cambio10r" onclick="cambio10();">Anterior</a></div><div class="botonSIG"><a id="cambio12" onclick="cambio12();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto12" style="display: none;"><div class="botonATR"><a id="cambio11r" onclick="cambio11();">Anterior</a></div><div class="botonSIG"><a id="cambio13" onclick="cambio13();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto13" style="display: none;"><div class="botonATR"><a id="cambio12r" onclick="cambio12(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#SubTerceroLink" id="cambio14" onclick="cambio14();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto14" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#SubTerceroLink" id="cambio13r" onclick="cambio13(); ">Anterior</a></div><div class="botonSIG"><a id="cambio15" onclick="cambio15();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto15" style="display: none;"><div class="botonATR"><a id="cambio14r" onclick="cambio14(); ">Anterior</a></div><div class="botonSIG"><a id="cambio16" onclick="cambio16();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto16" style="display: none;"><div class="botonATR"><a id="cambio15r" onclick="cambio15(); ">Anterior</a></div><div class="botonSIG"><a id="cambio17" onclick="cambio17();" data-toggle="collapse" href="#SubCuartoLink">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto17" style="display: none;"><div class="botonATR"><a id="cambio16r" onclick="cambio16(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#CuartoLink" id="cambio18" onclick="cambio18();">Siguiente</a></div></div>
+        <!--Sesion 2-->
+        <div class="ocultox" id="oculto18" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#TerceroLink"  id="cambio17r" onclick="cambio17(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-dLink" id="cambio19" onclick="cambio19();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto19" style="display: none;"><div class="botonATR"><a id="cambio18r" onclick="cambio18(); ">Anterior</a></div><div class="botonSIG"><a id="cambio20" onclick="cambio20();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto20" style="display: none;"><div class="botonATR"><a id="cambio19r" onclick="cambio19(); ">Anterior</a></div><div class="botonSIG"><a id="cambio21" onclick="cambio21();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto21" style="display: none;"><div class="botonATR"><a id="cambio20r" onclick="cambio20(); ">Anterior</a></div><div class="botonSIG"><a id="cambio22" onclick="cambio22();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto22" style="display: none;"><div class="botonATR"><a id="cambio21r" onclick="cambio21(); ">Anterior</a></div><div class="botonSIG"><a id="cambio23" onclick="cambio23();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto23" style="display: none;"><div class="botonATR"><a id="cambio22r" onclick="cambio22(); ">Anterior</a></div><div class="botonSIG"><a id="cambio24" onclick="cambio24();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto24" style="display: none;"><div class="botonATR"><a id="cambio23r" onclick="cambio23(); ">Anterior</a></div><div class="botonSIG"><a id="cambio25" data-toggle="collapse" href="#sub-eLink" onclick="cambio25();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto25" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-eLink" id="cambio24r" onclick="cambio24(); ">Anterior</a></div><div class="botonSIG"><a id="cambio26" onclick="cambio26();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto26" style="display: none;"><div class="botonATR"><a id="cambio25r" onclick="cambio25(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-fLink" id="cambio27" onclick="cambio27();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto27" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-fLink" id="cambio26r" onclick="cambio26(); ">Anterior</a></div><div class="botonSIG"><a id="cambio28" onclick="cambio28();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto28" style="display: none;"><div class="botonATR"><a id="cambio27r" onclick="cambio27(); ">Anterior</a></div><div class="botonSIG"><a id="cambio29" onclick="cambio29();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto29" style="display: none;"><div class="botonATR"><a id="cambio28r" onclick="cambio28(); ">Anterior</a></div><div class="botonSIG"><a id="cambio30" onclick="cambio30();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto30" style="display: none;"><div class="botonATR"><a id="cambio29r" onclick="cambio29(); ">Anterior</a></div><div class="botonSIG"><a id="cambio31" onclick="cambio31();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto31" style="display: none;"><div class="botonATR"><a id="cambio30r" onclick="cambio30(); ">Anterior</a></div><div class="botonSIG"><a id="cambio32" onclick="cambio32();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto32" style="display: none;"><div class="botonATR"><a id="cambio31r" onclick="cambio31(); ">Anterior</a></div><div class="botonSIG"><a id="cambio33" onclick="cambio33();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto33" style="display: none;"><div class="botonATR"><a id="cambio32r" onclick="cambio32(); ">Anterior</a></div><div class="botonSIG"><a id="cambio34" onclick="cambio34();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto34" style="display: none;"><div class="botonATR"><a id="cambio33r" onclick="cambio33(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#SubCuartoLink" id="cambio35" onclick="cambio35();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto35" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#SubCuartoLink" id="cambio34r" onclick="cambio34(); ">Anterior</a></div><div class="botonSIG"><a id="cambio36" onclick="cambio36();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto36" style="display: none;"><div class="botonATR"><a id="cambio35r" onclick="cambio35(); ">Anterior</a></div><div class="botonSIG"><a id="cambio37" onclick="cambio37();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto37" style="display: none;"><div class="botonATR"><a id="cambio36r" onclick="cambio36(); ">Anterior</a></div><div class="botonSIG"><a id="cambio38" onclick="cambio38();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto38" style="display: none;"><div class="botonATR"><a id="cambio37r" onclick="cambio37(); ">Anterior</a></div><div class="botonSIG"><a id="cambio39" onclick="cambio39();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto39" style="display: none;"><div class="botonATR"><a id="cambio38r" onclick="cambio38(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#QuintoLink" id="cambio40" onclick="cambio40();">Siguiente</a></div></div>
+        <!--sesion 3-->
+        <div class="ocultox" id="oculto40" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#QuintoLink" id="cambio39r" onclick="cambio39(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-gLink" id="cambio41" onclick="cambio41();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto41" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-gLink" id="cambio40r" onclick="cambio40(); ">Anterior</a></div><div class="botonSIG"><a id="cambio42" onclick="cambio42();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto42" style="display: none;"><div class="botonATR"><a id="cambio41r" onclick="cambio41(); ">Anterior</a></div><div class="botonSIG"><a id="cambio43" onclick="cambio43();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto43" style="display: none;"><div class="botonATR"><a id="cambio42r" onclick="cambio42(); ">Anterior</a></div><div class="botonSIG"><a id="cambio44" onclick="cambio44();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto44" style="display: none;"><div class="botonATR"><a id="cambio43r" onclick="cambio43(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-hLink" id="cambio45" onclick="cambio45();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto45" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-hLink" id="cambio44r" onclick="cambio44(); ">Anterior</a></div><div class="botonSIG"><a id="cambio46" onclick="cambio46();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto46" style="display: none;"><div class="botonATR"><a id="cambio45r" onclick="cambio45(); ">Anterior</a></div><div class="botonSIG"><a id="cambio47" onclick="cambio47();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto47" style="display: none;"><div class="botonATR"><a id="cambio46r" onclick="cambio46(); ">Anterior</a></div><div class="botonSIG"><a id="cambio48" onclick="cambio48();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto48" style="display: none;"><div class="botonATR"><a id="cambio47r" onclick="cambio47(); ">Anterior</a></div><div class="botonSIG"><a id="cambio49" onclick="cambio49();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto49" style="display: none;"><div class="botonATR"><a id="cambio48r" onclick="cambio48(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#SubQuintoLink" id="cambio50" onclick="cambio50();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto50" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#SubQuintoLink" id="cambio49r" onclick="cambio49(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#SextoLink" id="cambio51" onclick="cambio52();">Siguiente</a></div></div>
+        <!--sesion 4-->
+        <div class="ocultox" id="oculto51" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#QuintoLink" id="cambio50r" onclick="cambio50(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-iLink" id="cambio52" onclick="cambio52();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto52" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-iLink" id="cambio51r" onclick="cambio51(); ">Anterior</a></div><div class="botonSIG"><a id="cambio53" onclick="cambio53();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto53" style="display: none;"><div class="botonATR"><a id="cambio52r" onclick="cambio52(); ">Anterior</a></div><div class="botonSIG"><a id="cambio54" onclick="cambio54();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto54" style="display: none;"><div class="botonATR"><a id="cambio53r" onclick="cambio53(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-jLink" id="cambio55" onclick="cambio55();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto55" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-jLink" id="cambio54r" onclick="cambio54(); ">Anterior</a></div><div class="botonSIG"><a id="cambio56" onclick="cambio56();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto56" style="display: none;"><div class="botonATR"><a id="cambio55r" onclick="cambio55(); ">Anterior</a></div><div class="botonSIG"><a id="cambio57" onclick="cambio57();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto57" style="display: none;"><div class="botonATR"><a id="cambio56r" onclick="cambio56(); ">Anterior</a></div><div class="botonSIG"><a id="cambio58" onclick="cambio58();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto58" style="display: none;"><div class="botonATR"><a id="cambio57r" onclick="cambio57(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-kLink" id="cambio59" onclick="cambio59();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto59" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-kLink" id="cambio58r" onclick="cambio58(); ">Anterior</a></div><div class="botonSIG"><a id="cambio60" onclick="cambio60();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto60" style="display: none;"><div class="botonATR"><a id="cambio59r" onclick="cambio59(); ">Anterior</a></div><div class="botonSIG"><a id="cambio61" onclick="cambio61();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto61" style="display: none;"><div class="botonATR"><a id="cambio60r" onclick="cambio60(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-lLink" id="cambio62" onclick="cambio62();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto62" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-lLink" id="cambio61r" onclick="cambio61(); ">Anterior</a></div><div class="botonSIG"><a id="cambio63" onclick="cambio63();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto63" style="display: none;"><div class="botonATR"><a id="cambio62r" onclick="cambio62(); ">Anterior</a></div><div class="botonSIG"><a id="cambio64" onclick="cambio64();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto64" style="display: none;"><div class="botonATR"><a id="cambio63r" onclick="cambio63(); ">Anterior</a></div><div class="botonSIG"><a id="cambio65" onclick="cambio65();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto65" style="display: none;"><div class="botonATR"><a id="cambio64r" onclick="cambio64(); ">Anterior</a></div><div class="botonSIG"><a id="cambio66" onclick="cambio66();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto66" style="display: none;"><div class="botonATR"><a id="cambio65r" onclick="cambio65(); ">Anterior</a></div><div class="botonSIG"><a id="cambio67" onclick="cambio67();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto67" style="display: none;"><div class="botonATR"><a id="cambio66r" onclick="cambio66(); ">Anterior</a></div><div class="botonSIG"><a id="cambio68" onclick="cambio68();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto68" style="display: none;"><div class="botonATR"><a id="cambio67r" onclick="cambio67(); ">Anterior</a></div><div class="botonSIG"><a id="cambio69" onclick="cambio69();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto69" style="display: none;"><div class="botonATR"><a id="cambio68r" onclick="cambio68(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#SubQuintoLink" id="cambio70" onclick="cambio70();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto70" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#SubQuintoLink" id="cambio69r" onclick="cambio69(); ">Anterior</a></div><div class="botonSIG"><a id="cambio71" onclick="cambio71();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto71" style="display: none;"><div class="botonATR"><a id="cambio70r" onclick="cambio70(); ">Anterior</a></div><div class="botonSIG"><a id="cambio72" onclick="cambio72();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto72" style="display: none;"><div class="botonATR"><a id="cambio71r" onclick="cambio71(); ">Anterior</a></div><div class="botonSIG"><a id="cambio73" onclick="cambio73();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto73" style="display: none;"><div class="botonATR"><a id="cambio72r" onclick="cambio72(); ">Anterior</a></div></div>
+    </div>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $(".panel li").on("click", function(){
+          $(".panel").find(".activa").removeClass("activa");
+          $(this).addClass("activa");
+        });
+        $(".panel-2 li").on("click", function(){
+          $(".panel").find(".activa2").removeClass("activa2");
+          $(this).addClass("activa2");
+        });
+      });
+
+      $(document).ready(function(){
+        $("#op1").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op1").click(function(){
+          $("#oculto1").show();
+        });
+        $("#op2").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op2").click(function(){
+          $("#oculto2").show();
+        });
+        $("#op3").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op3").click(function(){
+          $("#oculto3").show();
+        });
+        $("#op4").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op4").click(function(){
+          $("#oculto4").show();
+        });
+        $("#op5").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op5").click(function(){
+          $("#oculto5").show();
+        });
+        $("#op6").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op6").click(function(){
+          $("#oculto6").show();
+        });
+        $("#op7").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op7").click(function(){
+          $("#oculto7").show();
+        });
+        $("#op8").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op8").click(function(){
+          $("#oculto8").show();
+        });
+        $("#op9").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op9").click(function(){
+          $("#oculto9").show();
+        });
+        $("#op10").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op10").click(function(){
+          $("#oculto10").show();
+        });
+        $("#op11").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op11").click(function(){
+          $("#oculto11").show();
+        });
+        $("#op12").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op12").click(function(){
+          $("#oculto12").show();
+        });
+        $("#op13").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op13").click(function(){
+          $("#oculto13").show();
+        });
+        $("#op14").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op14").click(function(){
+          $("#oculto14").show();
+        });
+        $("#op15").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op15").click(function(){
+          $("#oculto15").show();
+        });
+        $("#op16").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op16").click(function(){
+          $("#oculto16").show();
+        });
+        $("#op17").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op17").click(function(){
+          $("#oculto17").show();
+        });
+        $("#op18").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op18").click(function(){
+          $("#oculto18").show();
+        });
+        $("#op19").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op19").click(function(){
+          $("#oculto19").show();
+        });
+        $("#op20").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op20").click(function(){
+          $("#oculto20").show();
+        });
+        $("#op21").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op21").click(function(){
+          $("#oculto21").show();
+        });
+        $("#op22").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op22").click(function(){
+          $("#oculto22").show();
+        });
+        $("#op23").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op23").click(function(){
+          $("#oculto23").show();
+        });
+        $("#op24").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op24").click(function(){
+          $("#oculto24").show();
+        });
+        $("#op25").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op25").click(function(){
+          $("#oculto25").show();
+        });
+        $("#op26").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op26").click(function(){
+          $("#oculto26").show();
+        });
+        $("#op27").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op27").click(function(){
+          $("#oculto27").show();
+        });
+        $("#op28").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op28").click(function(){
+          $("#oculto28").show();
+        });
+        $("#op29").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op29").click(function(){
+          $("#oculto29").show();
+        });
+        $("#op30").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op30").click(function(){
+          $("#oculto30").show();
+        });
+        $("#op31").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op31").click(function(){
+          $("#oculto31").show();
+        });
+        $("#op32").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op32").click(function(){
+          $("#oculto32").show();
+        });
+        $("#op33").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op33").click(function(){
+          $("#oculto33").show();
+        });
+        $("#op34").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op34").click(function(){
+          $("#oculto34").show();
+        });
+        $("#op35").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op35").click(function(){
+          $("#oculto35").show();
+        });
+        $("#op36").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op36").click(function(){
+          $("#oculto36").show();
+        });
+        $("#op37").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op37").click(function(){
+          $("#oculto37").show();
+        });
+        $("#op38").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op38").click(function(){
+          $("#oculto38").show();
+        });
+        $("#op39").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op39").click(function(){
+          $("#oculto39").show();
+        });
+        $("#op40").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op40").click(function(){
+          $("#oculto40").show();
+        });
+        $("#op41").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op41").click(function(){
+          $("#oculto41").show();
+        });
+        $("#op42").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op42").click(function(){
+          $("#oculto42").show();
+        });
+        $("#op43").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op43").click(function(){
+          $("#oculto43").show();
+        });
+        $("#op44").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op44").click(function(){
+          $("#oculto44").show();
+        });
+        $("#op45").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op45").click(function(){
+          $("#oculto45").show();
+        });
+        $("#op46").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op46").click(function(){
+          $("#oculto46").show();
+        });
+        $("#op47").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op47").click(function(){
+          $("#oculto47").show();
+        });
+        $("#op48").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op48").click(function(){
+          $("#oculto48").show();
+        });
+        $("#op49").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op49").click(function(){
+          $("#oculto49").show();
+        });
+        $("#op50").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op50").click(function(){
+          $("#oculto50").show();
+        });
+        $("#op51").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op51").click(function(){
+          $("#oculto51").show();
+        });
+        $("#op52").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op52").click(function(){
+          $("#oculto52").show();
+        });
+        $("#op53").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op53").click(function(){
+          $("#oculto53").show();
+        });
+        $("#op54").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op54").click(function(){
+          $("#oculto54").show();
+        });
+        $("#op55").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op55").click(function(){
+          $("#oculto55").show();
+        });
+        $("#op56").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op56").click(function(){
+          $("#oculto56").show();
+        });
+        $("#op57").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op57").click(function(){
+          $("#oculto57").show();
+        });
+        $("#op58").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op58").click(function(){
+          $("#oculto58").show();
+        });
+        $("#op59").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op59").click(function(){
+          $("#oculto59").show();
+        });
+        $("#op60").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op60").click(function(){
+          $("#oculto60").show();
+        });
+        $("#op61").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op61").click(function(){
+          $("#oculto61").show();
+        });
+        $("#op62").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op62").click(function(){
+          $("#oculto62").show();
+        });
+        $("#op63").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op63").click(function(){
+          $("#oculto63").show();
+        });
+        $("#op64").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op64").click(function(){
+          $("#oculto64").show();
+        });
+        $("#op65").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op65").click(function(){
+          $("#oculto65").show();
+        });
+        $("#op66").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op66").click(function(){
+          $("#oculto66").show();
+        });
+        $("#op67").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op67").click(function(){
+          $("#oculto67").show();
+        });
+        $("#op68").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op68").click(function(){
+          $("#oculto68").show();
+        });
+        $("#op69").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op69").click(function(){
+          $("#oculto69").show();
+        });
+        $("#op70").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op70").click(function(){
+          $("#oculto70").show();
+        });
+        $("#op71").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op71").click(function(){
+          $("#oculto71").show();
+        });
+        $("#op72").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op72").click(function(){
+          $("#oculto72").show();
+        });
+        $("#op73").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op73").click(function(){
+          $("#oculto73").show();
+        });
+        
+        
+
+
+        $("#cambio1r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio1r").click(function(){
+          $("#oculto1").show();
+        });
+        $("#cambio2").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio2").click(function(){
+          $("#oculto2").show();
+        });
+        $("#cambio2r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio2r").click(function(){
+          $("#oculto2").show();
+        });
+        $("#cambio3").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio3").click(function(){
+          $("#oculto3").show();
+        });
+        $("#cambio3r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio3r").click(function(){
+          $("#oculto3").show();
+        });
+        $("#cambio4").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio4").click(function(){
+          $("#oculto4").show();
+        });
+        $("#cambio4r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio4r").click(function(){
+          $("#oculto4").show();
+        });
+        $("#cambio5").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio5").click(function(){
+          $("#oculto5").show();
+        });
+        $("#cambio5r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio5r").click(function(){
+          $("#oculto5").show();
+        });
+        $("#cambio6").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio6").click(function(){
+          $("#oculto6").show();
+        });
+        $("#cambio6r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio6r").click(function(){
+          $("#oculto6").show();
+        });
+        $("#cambio7").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio7").click(function(){
+          $("#oculto7").show();
+        });
+        $("#cambio7r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio7r").click(function(){
+          $("#oculto7").show();
+        });
+        $("#cambio8").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio8").click(function(){
+          $("#oculto8").show();
+        });
+        $("#cambio8r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio8r").click(function(){
+          $("#oculto8").show();
+        });
+        $("#cambio9").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio9").click(function(){
+          $("#oculto9").show();
+        });
+        $("#cambio9r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio9r").click(function(){
+          $("#oculto9").show();
+        });
+        $("#cambio10").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio10").click(function(){
+          $("#oculto10").show();
+        });
+        $("#cambio10r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio10r").click(function(){
+          $("#oculto10").show();
+        });
+        $("#cambio11").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio11").click(function(){
+          $("#oculto11").show();
+        });
+        $("#cambio11r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio11r").click(function(){
+          $("#oculto11").show();
+        });
+        $("#cambio12").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio12").click(function(){
+          $("#oculto12").show();
+        });
+        $("#cambio12r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio12r").click(function(){
+          $("#oculto12").show();
+        });
+        $("#cambio13").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio13").click(function(){
+          $("#oculto13").show();
+        });
+        $("#cambio13r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio13r").click(function(){
+          $("#oculto13").show();
+        });
+        $("#cambio14").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio14").click(function(){
+          $("#oculto14").show();
+        });
+        $("#cambio14r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio14r").click(function(){
+          $("#oculto14").show();
+        });
+        $("#cambio15").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio15").click(function(){
+          $("#oculto15").show();
+        });
+        $("#cambio15r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio15r").click(function(){
+          $("#oculto15").show();
+        });
+        $("#cambio16").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio16").click(function(){
+          $("#oculto16").show();
+        });
+        $("#cambio16r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio16r").click(function(){
+          $("#oculto16").show();
+        });
+        $("#cambio17").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio17").click(function(){
+          $("#oculto17").show();
+        });
+        $("#cambio17r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio17r").click(function(){
+          $("#oculto17").show();
+        });
+        $("#cambio18").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio18").click(function(){
+          $("#oculto18").show();
+        });
+        $("#cambio18r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio18r").click(function(){
+          $("#oculto18").show();
+        });
+        $("#cambio19").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio19").click(function(){
+          $("#oculto19").show();
+        });
+        $("#cambio19r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio19r").click(function(){
+          $("#oculto19").show();
+        });
+        $("#cambio20").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio20").click(function(){
+          $("#oculto20").show();
+        });
+        $("#cambio20r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio20r").click(function(){
+          $("#oculto20").show();
+        });
+        $("#cambio21").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio21").click(function(){
+          $("#oculto21").show();
+        });
+        $("#cambio21r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio21r").click(function(){
+          $("#oculto21").show();
+        });
+        $("#cambio22").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio22").click(function(){
+          $("#oculto22").show();
+        });
+        $("#cambio22r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio22r").click(function(){
+          $("#oculto22").show();
+        });
+        $("#cambio23").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio23").click(function(){
+          $("#oculto23").show();
+        });
+        $("#cambio23r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio23r").click(function(){
+          $("#oculto23").show();
+        });
+        $("#cambio24").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio24").click(function(){
+          $("#oculto24").show();
+        });
+        $("#cambio24r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio24r").click(function(){
+          $("#oculto24").show();
+        });
+        $("#cambio25").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio25").click(function(){
+          $("#oculto25").show();
+        });
+        $("#cambio25r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio25r").click(function(){
+          $("#oculto25").show();
+        });
+        $("#cambio26").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio26").click(function(){
+          $("#oculto26").show();
+        });
+        $("#cambio26r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio26r").click(function(){
+          $("#oculto26").show();
+        });
+        $("#cambio27").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio27").click(function(){
+          $("#oculto27").show();
+        });
+        $("#cambio27r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio27r").click(function(){
+          $("#oculto27").show();
+        });
+        $("#cambio28").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio28").click(function(){
+          $("#oculto28").show();
+        });
+        $("#cambio28r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio28r").click(function(){
+          $("#oculto28").show();
+        });
+        $("#cambio29").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio29").click(function(){
+          $("#oculto29").show();
+        });
+        $("#cambio29r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio29r").click(function(){
+          $("#oculto29").show();
+        });
+        $("#cambio30").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio30").click(function(){
+          $("#oculto30").show();
+        });
+        $("#cambio30r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio30r").click(function(){
+          $("#oculto30").show();
+        });
+        $("#cambio31").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio31").click(function(){
+          $("#oculto31").show();
+        });
+        $("#cambio31r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio31r").click(function(){
+          $("#oculto31").show();
+        });
+        $("#cambio32").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio32").click(function(){
+          $("#oculto32").show();
+        });
+        $("#cambio32r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio32r").click(function(){
+          $("#oculto32").show();
+        });
+        $("#cambio33").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio33").click(function(){
+          $("#oculto33").show();
+        });
+        $("#cambio33r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio33r").click(function(){
+          $("#oculto33").show();
+        });
+        $("#cambio34").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio34").click(function(){
+          $("#oculto34").show();
+        });
+        $("#cambio34r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio34r").click(function(){
+          $("#oculto34").show();
+        });
+        $("#cambio35").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio35").click(function(){
+          $("#oculto35").show();
+        });
+        $("#cambio35r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio35r").click(function(){
+          $("#oculto35").show();
+        });
+        $("#cambio36").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio36").click(function(){
+          $("#oculto36").show();
+        });
+        $("#cambio36r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio36r").click(function(){
+          $("#oculto36").show();
+        });
+        $("#cambio37").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio37").click(function(){
+          $("#oculto37").show();
+        });
+        $("#cambio37r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio37r").click(function(){
+          $("#oculto37").show();
+        });
+        $("#cambio38").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio38").click(function(){
+          $("#oculto38").show();
+        });
+        $("#cambio38r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio38r").click(function(){
+          $("#oculto38").show();
+        });
+        $("#cambio39").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio39").click(function(){
+          $("#oculto39").show();
+        });
+        $("#cambio39r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio39r").click(function(){
+          $("#oculto39").show();
+        });
+        $("#cambio40").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio40").click(function(){
+          $("#oculto40").show();
+        });
+        $("#cambio40r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio40r").click(function(){
+          $("#oculto40").show();
+        });
+        $("#cambio41").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio41").click(function(){
+          $("#oculto41").show();
+        });
+        $("#cambio41r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio41r").click(function(){
+          $("#oculto41").show();
+        });
+        $("#cambio42").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio42").click(function(){
+          $("#oculto42").show();
+        });
+        $("#cambio42r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio42r").click(function(){
+          $("#oculto42").show();
+        });
+        $("#cambio43").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio43").click(function(){
+          $("#oculto43").show();
+        });
+        $("#cambio43r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio43r").click(function(){
+          $("#oculto43").show();
+        });
+        $("#cambio44").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio44").click(function(){
+          $("#oculto44").show();
+        });
+        $("#cambio44r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio44r").click(function(){
+          $("#oculto44").show();
+        });
+        $("#cambio45").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio45").click(function(){
+          $("#oculto45").show();
+        });
+        $("#cambio45r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio45r").click(function(){
+          $("#oculto45").show();
+        });
+        $("#cambio46").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio46").click(function(){
+          $("#oculto46").show();
+        });
+        $("#cambio46r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio46r").click(function(){
+          $("#oculto46").show();
+        });
+        $("#cambio47").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio47").click(function(){
+          $("#oculto47").show();
+        });
+        $("#cambio47r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio47r").click(function(){
+          $("#oculto47").show();
+        });
+        $("#cambio48").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio48").click(function(){
+          $("#oculto48").show();
+        });
+        $("#cambio48r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio48r").click(function(){
+          $("#oculto48").show();
+        });
+        $("#cambio49").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio49").click(function(){
+          $("#oculto49").show();
+        });
+        $("#cambio49r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio49r").click(function(){
+          $("#oculto49").show();
+        });
+        $("#cambio50").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio50").click(function(){
+          $("#oculto50").show();
+        });
+        $("#cambio50r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio50r").click(function(){
+          $("#oculto50").show();
+        });
+        $("#cambio51").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio51").click(function(){
+          $("#oculto51").show();
+        });
+        $("#cambio51r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio51r").click(function(){
+          $("#oculto51").show();
+        });
+        $("#cambio52").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio52").click(function(){
+          $("#oculto52").show();
+        });
+        $("#cambio52r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio52r").click(function(){
+          $("#oculto52").show();
+        });
+        $("#cambio53").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio53").click(function(){
+          $("#oculto53").show();
+        });
+        $("#cambio53r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio53r").click(function(){
+          $("#oculto53").show();
+        });
+        $("#cambio54").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio54").click(function(){
+          $("#oculto54").show();
+        });
+        $("#cambio54r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio54r").click(function(){
+          $("#oculto54").show();
+        });
+        $("#cambio55").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio55").click(function(){
+          $("#oculto55").show();
+        });
+        $("#cambio55r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio55r").click(function(){
+          $("#oculto55").show();
+        });
+        $("#cambio56").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio56").click(function(){
+          $("#oculto56").show();
+        });
+        $("#cambio56r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio56r").click(function(){
+          $("#oculto56").show();
+        });
+        $("#cambio57").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio57").click(function(){
+          $("#oculto57").show();
+        });
+        $("#cambio57r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio57r").click(function(){
+          $("#oculto57").show();
+        });
+        $("#cambio58").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio58").click(function(){
+          $("#oculto58").show();
+        });
+        $("#cambio58r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio58r").click(function(){
+          $("#oculto58").show();
+        });
+        $("#cambio59").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio59").click(function(){
+          $("#oculto59").show();
+        });
+        $("#cambio59r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio59r").click(function(){
+          $("#oculto59").show();
+        });
+        $("#cambio60").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio60").click(function(){
+          $("#oculto60").show();
+        });
+        $("#cambio60r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio60r").click(function(){
+          $("#oculto60").show();
+        });
+        $("#cambio61").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio61").click(function(){
+          $("#oculto61").show();
+        });
+        $("#cambio61r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio61r").click(function(){
+          $("#oculto61").show();
+        });
+        $("#cambio62").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio62").click(function(){
+          $("#oculto62").show();
+        });
+        $("#cambio62r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio62r").click(function(){
+          $("#oculto62").show();
+        });
+        $("#cambio63").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio63").click(function(){
+          $("#oculto63").show();
+        });
+        $("#cambio63r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio63r").click(function(){
+          $("#oculto63").show();
+        });
+        $("#cambio64").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio64").click(function(){
+          $("#oculto64").show();
+        });
+        $("#cambio64r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio64r").click(function(){
+          $("#oculto64").show();
+        });
+        $("#cambio65").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio65").click(function(){
+          $("#oculto65").show();
+        });
+        $("#cambio65r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio65r").click(function(){
+          $("#oculto65").show();
+        });
+        $("#cambio66").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio66").click(function(){
+          $("#oculto66").show();
+        });
+        $("#cambio66r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio66r").click(function(){
+          $("#oculto66").show();
+        });
+        $("#cambio67").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio67").click(function(){
+          $("#oculto67").show();
+        });
+        $("#cambio67r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio67r").click(function(){
+          $("#oculto67").show();
+        });
+        $("#cambio68").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio68").click(function(){
+          $("#oculto68").show();
+        });
+        $("#cambio68r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio68r").click(function(){
+          $("#oculto68").show();
+        });
+        $("#cambio69").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio69").click(function(){
+          $("#oculto69").show();
+        });
+        $("#cambio69r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio69r").click(function(){
+          $("#oculto69").show();
+        });
+        $("#cambio70").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio70").click(function(){
+          $("#oculto70").show();
+        });
+        $("#cambio70r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio70r").click(function(){
+          $("#oculto70").show();
+        });
+        $("#cambio71").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio71").click(function(){
+          $("#oculto71").show();
+        });
+        $("#cambio71r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio71r").click(function(){
+          $("#oculto71").show();
+        });
+        $("#cambio72").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio72").click(function(){
+          $("#oculto72").show();
+        });
+        $("#cambio72r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio72r").click(function(){
+          $("#oculto72").show();
+        });
+        $("#cambio73").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio73").click(function(){
+          $("#oculto73").show();
+        });
+        $("#cambio73r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio73r").click(function(){
+          $("#oculto73").show();
+        });
+        
+        
+      });
+      
+      function cambio1(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/CI2jlh0iH2U?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>Cápsula.- Bienvenida al curso</b><br><small>Bienvenid@s al curso</small>';
+      }
+      function cambio2(){ 
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Recursos de apoyo/mi_cuaderno_de_trabajo.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Mi cuaderno de trabajo</b>';
+      }
+      function cambio3(){
+        top.frames['vidframe'].location.href = 'pdf/sesion1.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje sesión 1</b>';
+      }
+      function cambio4(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/m-XsgDzifCk?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Introducción: Los retos de la Educación y la promesa de las Habilidades Socioemocionales</b><br><small><b>Los retos de la educación y la promesa de las HSE (I)</b><br>En esta primera sesión queremos analizar la importancia de las habilidades socioemocionales (HSE) en la educación ¿Cómo pueden ayudar las HSE a los profesionales de la educación y a los estudiantes?<br>¡Comencemos viendo el siguiente video!<br>La importancia de las habilidades socioemocionales en el mundo<br>¿Para qué les sirven las habilidades socioemocionales a los jóvenes?</small>';
+      }
+      function cambio5(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/rHWzMBVzmUg?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Introducción: Los retos de la Educación y la promesa de las Habilidades Socioemocionales</b><br><small><b>Los retos de la educación y la promesa de las HSE (II)</b><br>El papel de los educadores en el desarrollo socioemocional de los jóvenes<br>Resultados de programas socioemocionales en el mundo<br>¿Qué quiere lograr el programa Construye T para los jóvenes?<br>¿Para qué educar?</small>';
+        }
+      function cambio6(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/cN0OzT67ifg?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- El Programa Construye T y la importancia de las Habilidades Socioemocionales</b><br><small><b>El programa Construye T y la importancia de las HSE (I)</b><br>Las habilidades socioemocionales son importantes para el desempeño de los educadores y de los estudiantes. ¿Cómo las incorpora el programa Construye T?<br>El perfil del egresado de la educación media superior y su relación con Construye T<br>¿Qué son las habilidades socioemocionales?<br>Ejemplos de habilidades socioemocionales</small>';
+        }
+        function cambio7(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/DioMbj7eDvQ?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- El Programa Construye T y la importancia de las Habilidades Socioemocionales</b><br><small><b>Los retos de la educación y la promesa de las HSE (II)</b><br>Las dimensiones de Construye T<br>Las habilidades socioemocionales y el nuevo modelo educativo<br>Resultados de PLANEA y su relación con las habilidades socioemocionales<br>Efectos de las habilidades socioemocionales en los jóvenes</small>';
+        }
+        function cambio8(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/evidencia_cientifica_de_las_hse.pdf';
+        document.getElementById('textintro').innerHTML = '<b>2.- El Programa Construye T y la importancia de las Habilidades Socioemocionales</b><br><small><b>Infográfico</b><br>¿Y qué evidencia científica hay sobre la enseñanza de las HSE? Veamos el siguiente infográfico.</small>';
+        }
+        
+        function cambio9(){
+          top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/TQMGZUrvQaw?rel=0&enablejsapi=1';
+          document.getElementById('textintro').innerHTML = '<b>3.- Capacitación de Líderes Educativos en Construye T</b><br><small><b>Capacitación de líderes educativos en Construye T</b><br>Finalicemos la reflexión sobre las HSE y el programa Construye T con el siguiente video, donde se revisa la esencia y los cambios del programa Construye T. ¡Adelante!<br>Las habilidades socioemocionales se pueden educar<br>El rol de las habilidades socioemocionales y las emociones en nuestra vida<br>Se educa con el ejemplo<br>Estructura de la formación para docentes, tutores y directivos.</small>';
+        }
+        function cambio10(){
+          top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/los_fines_de_la_educacion_en_el_siglo_xxi.pdf';
+          document.getElementById('textintro').innerHTML = '<b>3.- Capacitación de Líderes Educativos en Construye T</b><br><small><b>Los fines de la educación en el siglo XXI: una sóla meta</b><br>Y para realizar una reflexión más sustantiva sobre los fines de la educación y las habilidades socioemocionales, te invitamos a leer las siguientes lecturas y a realizar el ejercicio subsiguiente.</small>';
+        }
+        function cambio11(){
+          top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/perfil_de_egreso_de_ems.pdf';
+          document.getElementById('textintro').innerHTML = '<b>3.- Capacitación de Líderes Educativos en Construye T</b><br><small><b>El perfil de Egreso de Educación Media Superior</b><br>Y para realizar una reflexión más sustantiva sobre los fines de la educación y las habilidades socioemocionales, te invitamos a leer las siguientes lecturas y a realizar el ejercicio subsiguiente.</small>';
+        }
+        function cambio12(){
+          top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/las_hse_en_el_nme.pdf';
+          document.getElementById('textintro').innerHTML = '<b>3.- Capacitación de Líderes Educativos en Construye T</b><br><small><b>Las Habilidades Socioemocionales en el Nuevo Modelo Educativo</b><br>Y para realizar una reflexión más sustantiva sobre los fines de la educación y las habilidades socioemocionales, te invitamos a leer las siguientes lecturas y a realizar el ejercicio subsiguiente.</small>';
+        }
+      function cambio13(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/puntos_esenciales_sesion_1.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales Sesión 1</b>';
+        }
+      function cambio14(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/las_hse_en_el_nme.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Las HSE en el NME</b>';
+        }
+      function cambio15(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/los_fines_de_la_educacion_en_el_siglo_xxi.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Los fines de la educación en el s.XXI</b>';
+        }
+      function cambio16(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/perfil_de_egreso_de_ems.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Perfil de egreso de EMS</b>';
+        }
+      function cambio17(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/evidencia_cientifica_de_las_hse.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Evidencia científica de las HSE</b>';
+        }
+      /*secion 2*/
+      function cambio18(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/guia_de_aprendizaje_sesion_2.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje sesión 2</b>';
+        }
+      function cambio19(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/5SPcnOcXkAY?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- ¿Las habilidades socioemocionales se pueden entrenar?</b><br><small><b>Introducción y bienvenida sesión 2</b><br>Comencemos esta sesión con el video de bienvenida.</small>';
+        }
+        function cambio20(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/Tpg6TH9MzXI?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- ¿Las habilidades socioemocionales se pueden entrenar?</b><br><small><b>¿Por qué son importantes las HSE?</b><br>Completemos la actividad anterior revisando las siguientes tres cápsulas.<br>¿Qué son las habilidades socioemocionales?<br>¿Por qué son importantes las HSE?</small>';
+        }
+        function cambio21(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/i9vyEiX1lvU?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- ¿Las habilidades socioemocionales se pueden entrenar?</b><br><small><b>¿Cómo se aprenden las Habilidades Socioemocionales?</b><br>Completemos la actividad anterior revisando las siguientes tres cápsulas.<br>La neuroplasticidad: el cerebro se moldea y transforma continuamente.<br>Dos vías para desarrollar nuevos hábitos: Nuestras interacciones con los demás y el cultivo deliberado de las habilidades socioemocionales.</small>';
+        }
+        function cambio22(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/SvjSL3t6afU?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- ¿Las habilidades socioemocionales se pueden entrenar?</b><br><small><b>¿Cómo se enseñan las Habilidades Socioemocionales?</b><br>Completemos la actividad anterior revisando las siguientes tres cápsulas.<br>Diferentes modelos de HSE en el mundo.</small>';
+        }
+        function cambio23(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/tabla_programas_de_hse_en_el_mundo.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- ¿Las habilidades socioemocionales se pueden entrenar?</b><br><small><b>Tabla.- Programas de desarrollo de las Habilidades Socioemocionales en el mundo</b><br>Para conocer más sobre los programas de desarrollo de HSE en el mundo, consulta las siguientes dos tablas y realiza el ejercicio escrito: ¿Qué programas hay en el mundo?</small>';
+        }
+        function cambio24(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/tabla_otros_programas_de_hse_en_el_mundo_paginas.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- ¿Las habilidades socioemocionales se pueden entrenar?</b><br><small><b>Tabla.- Referencias de otros programas de HSE en el mundo.</b><br>Para conocer más sobre los programas de desarrollo de HSE en el mundo, consulta las siguientes dos tablas y realiza el ejercicio escrito: ¿Qué programas hay en el mundo?</small>';
+        }
+      function cambio25(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/v3U7SQCI-t4?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- ¿Qué se ha hecho para el desarrollo de las Habilidades Socioemocionales en México?</b><br><small><b>Un poco de historia...</b><br>En esta cápsula revisaremos ¿Qué se ha hecho para el desarrollo de las HSE en la educación media superior en México?<br>Lo que hemos hecho en la educación media superior en México para incorporar HSE en nuestros planteles.</small>';
+        }
+        function cambio26(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/J18vbYHR-rc?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- ¿Qué se ha hecho para el desarrollo de las Habilidades Socioemocionales en México?</b><br><small><b¿Qué hemos aprendido?</b><br>Veamos que aprendimos para mejorar el programa.<br>Testimonios sobre la implementación del programa Construye T.<br>¿Qué aprendimos tras escucharte para mejorar el programa?</small>';
+        }
+      function cambio27(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/cmpQk8FvKYo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- El Programa Construye T 2017</b><br><small><b>Contenidos del Programa Construye T (Conoce T)</b><br>Revisemos con mayor profundidad el programa Construye T, ¿cuál es su objetivo y cuáles son sus contenidos?<br>El objetivo de Construye T<br>Los contenidos del programa: seis habilidades genéricas articuladas en tres dimensiones.<br>La primera dimensión de Construye T: Conoce T.</small>';
+        }
+        function cambio28(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/2n0JiWaLxIo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- El Programa Construye T 2017</b><br><small><b>Contenidos del Programa Construye T (Relaciona T)</b><br>Revisemos con mayor profundidad el programa Construye T, ¿cuál es su objetivo y cuáles son sus contenidos?<br>La segunda dimensión de Construye T: Relaciona T</small>';
+        }
+        function cambio29(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/2xqRD4T2nkQ?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- El Programa Construye T 2017</b><br><small><b>Contenidos del Programa Construye T (Elige T)</b><br>Revisemos con mayor profundidad el programa Construye T, ¿cuál es su objetivo y cuáles son sus contenidos?<br>La tercera dimensión de Construye T: Elige T</small>';
+        }
+        function cambio30(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/C72YpMlCV4s?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- El Programa Construye T 2017</b><br><small><b>¿Por qué elegimos estas habilidades y no otras? Habilidades transversales<b><br>Veamos ¿por qué se eligieron estas habilidades y no otras? ¿Qué habilidades transversales encontraremos en el programa Construye T?<br>¿Por qué elegimos estas seis habilidades?</small>';
+        }
+        function cambio31(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/referencias_de_otros_programas_de_hse.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- El Programa Construye T 2017</b><br><small><b>Referencias bibliográficas para el desarrollo de programas similares a Construye T en todo el mundo.</b>/br>En este documento encontrarás un extenso listado de referencias bibliográficas para conseguir información sobre programas para el desarrollo de habilidades socioemocionales en todo el mundo.</small>';
+        }
+        function cambio32(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/presentacion_las_10_cosas_que_debes_saber.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- El Programa Construye T 2017</b><br><small><b>resentación.- 10 cosas que debes saber del Programa Construye T para el ciclo escolar 2017-2018</b></small>';
+        }
+        function cambio33(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/infografia_las_10_cosas_que_debes_saber.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- El Programa Construye T 2017</b><br><small><b>Infografía.- 10 cosas que debes saber del Programa Construye T para el ciclo escolar 2017-2018</b><br>En esta infografía encontrarás la información de la presentación anterior de manera más resumida en un solo documento.</small>';
+        }
+      function cambio34(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/puntos_esenciales_sesion_2.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales Sesión 2</b>';
+        }
+      function cambio35(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/infografia_las_10_cosas_que_debes_saber.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Infografía.- Las 10 cosas que debes saber del programa Construye T</b>';
+        }
+      function cambio36(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/presentacion_las_10_cosas_que_debes_saber.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Presentación.- Las 10 cosas que debes saber del programa Construye T</b>';
+        }
+      function cambio37(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/tabla_programas_de_hse_en_el_mundo.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Tabla.- Programas de HSE en el mundo</b>';
+        }
+      function cambio38(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/tabla_otros_programas_de_hse_en_el_mundo_paginas.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Tabla.- Otros programas de HSE en el mundo (páginas electrónicas)</b>';
+        }
+      function cambio39(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 2. El nuevo diseño Construye t para la enseñanza de las habilidades socioemocionales/referencias_de_otros_programas_de_hse.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Referencias de otros programas de HSE</b>';
+        }
+        /*sesion 3*/
+      function cambio40(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 3. Las habilidades socioemocionales se pueden entrenar/guia_de_aprendizaje_sesion_3.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje sesión 3</b>';
+        }
+      function cambio41(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/BS7YJF0f3CI?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Las Habilidades Socioemocionales. ¿Por qué son importantes? ¿Cómo se aprenden y cómo se enseñan?</b><br><small><b>¿Las Habilidades Socioemocionales se pueden entrenar?</b><br>Comencemos esta sesión con la siguiente pregunta: ¿Las habilidades socioemocionales se pueden entrenar?<br>Bienvenida a la sesión.<br>¿Las habilidades socioemocionales se pueden enseñar y aprender?<br>Podemos cambiar: neurogénesis y neuroplasticidad</small>';
+        }
+        function cambio42(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/eoNcqJlPvUU?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Las Habilidades Socioemocionales. ¿Por qué son importantes? ¿Cómo se aprenden y cómo se enseñan?</b><br><small><b>Neuroplasticidad</b><br>Sigamos nuestra reflexión analizando las siguientes tres cápsulas sobre neuroplasticidad y desarrollo de HSE. La primera nos explica el funcionamiento del cerebro y su plasticidad.<br>¿Qué es la neuroplasticidad?</small>';
+        }
+        function cambio43(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/s5pa9B_xD3g?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Las Habilidades Socioemocionales. ¿Por qué son importantes? ¿Cómo se aprenden y cómo se enseñan?</b><br><small><b>Neuroplasticidad en acción (I)</b><br>Lo que sentimos, lo que pensamos y cómo nos comportamos son simplemente hábitos.<br>Como cualquier otra habilidad, las habilidades sociemocionales se pueden desarrollar.<br>¿Cómo se modifica un hábito, cómo se desarrolla una habilidad?</small>';
+        }
+        function cambio44(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/2CsowEMTLBo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Las Habilidades Socioemocionales. ¿Por qué son importantes? ¿Cómo se aprenden y cómo se enseñan?</b><br><small><b>Neuroplasticidad en acción (II)<b/><br>La mente puede crear nuevos hábitos, nuevas maneras de sentir, pensar y actuar.<br>Podemos dejar atrás los hábitos que queremos abandonar y cultivar y fortalecer los hábitos que queremos conservar.</small>';
+        }
+      function cambio45(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/-6q5eV1MLPY?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Calmar la mente a través del entrenamiento de la atención</b><br><small><b>La mente inquieta (Parte 1)</b><br>Veamos el papel que juega la atención en la regulación emocional, ¿por qué es importante entrenar la atención? ¿cómo podemos hacerlo?<br>Uno de los factores más importantes para la regulación emocional es la posibilidad de regular la atención.<br>Agitación mental: un modelo pedagógico de la mente, la mente de chango.<br>La mente de chango y el estrés<br>Entrenar la mente para calmarla</small>';
+        }
+        function cambio46(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/QEJDAiAWyo8?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Calmar la mente a través del entrenamiento de la atención</b><br><small><b>La mente inquieta (Parte 2)</b><br>Veamos el papel que juega la atención en la regulación emocional, ¿por qué es importante entrenar la atención? ¿cómo podemos hacerlo?<br>Ejercicio: reconocer y mover voluntariamente nuestra atención.<br>Estrategia para aquietar a la mente: poner la atención en las sensaciones de la respiración<br>Cómo ganar control sobre la agitación mental<br>Ventajas de mover la atención voluntariamente</small>';
+        }
+        function cambio47(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/K8PSKcQCcRE?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Calmar la mente a través del entrenamiento de la atención</b><br><small><b>Regula tu atención para regular tus emociones y tu estrés</b><br>Finalizamos la sesión recapitulando la relación entre la regulación de la atención y la regulación emocional, y recordando los aprendizajes que adquirimos.<br>La técnica de la atención en la respiración para entrenar nuestra atención.<br>Regular la atención para regular las emociones y el estrés.</small>';
+        }
+      function cambio48(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 3. Las habilidades socioemocionales se pueden entrenar/atencion_en_la_respiracion.mp3';
+        document.getElementById('textintro').innerHTML = '<b>Entrenamiento de la semana.</b><br><small><b>Técnica de atención en la respiración</b><br>Determínate realizar la técnica de atención en la respiración durante 2 minutos diariamente por una semana.<br>Puedes descargar a tu celular el audio que encontrarás a continuación. Te recomendamos escoger un momento del día para que te acostumbres a hacerlo más o menos a la misma hora todos los días y sea más fácil que se genere un hábito, aunque esto no es esencial.</small>';
+        }
+      function cambio49(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 3. Las habilidades socioemocionales se pueden entrenar/puntos_esenciales_sesion_3.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales Sesión 3</b>';
+        }
+      function cambio50(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 3. Las habilidades socioemocionales se pueden entrenar/atencion_en_la_respiracion.mp3';
+        document.getElementById('textintro').innerHTML = '<b>Atender la respiración</b>';
+        }
+      function cambio51(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/guia_de_aprendizaje_sesion_4.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje sesión 4</b>';
+        }
+      function cambio52(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/9w7KHG9lKVc?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Lo esencial sobre la estrategia de implementación</b><br><small><b>Lo esencial sobre la estrategia de implementación</b><br>Comencemos esta sesión. Retomaremos el programa Construye T y el rol fundamental de los directivos y docentes en el programa<br>Bienvenida<br>Para que el programa cumpla sus objetivos, no basta un buen diseño, es indispensable asegurar una correcta implementación.</small>';
+        }
+        function cambio53(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 1. La importancia de las habilidades socioemocionales/las_hse_en_el_nme.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Lo esencial sobre la estrategia de implementación</b><br><small><b>Las Habilidades Socioemocionales en el NME.</b><br>Para adentrarnos de forma más profunda en las habilidades socioemocionales del Nuevo Modelo Educativo, te presentamos la siguiente lectura. ¡Leela y pasa a la siguiente actividad!</small>';
+        }
+        function cambio54(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/lo_esencial_sobre_la_estrategia_de_implementacion.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Lo esencial sobre la estrategia de implementación</b><br><small><b>Para Reflexionar.- La estrategia Construye T</b><br>Consulta las respuestas a las preguntas anteriores en el siguiente archivo descargable:</small>';
+        }
+      function cambio55(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/1giLsuLeLOA?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Quiénes y visión</b><br><small><b>Los actores clave del programa: Quiénes (Primera parte)</b><br>Profundicemos en el papel de directores y tutores en el programa Construye T. ¿Qué deben tomar en cuenta y qué deben hacer cada uno de ustedes? Veamos los siguientes videos.<br>Dos elementos clave para la implantación del programa Construye T.<br>Los actores clave del programa.</small>';
+        }
+        function cambio56(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/xhzq3XcfOos?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Quiénes y visión</b><br><small><b>Los actores clave del programa: Quiénes (Primera parte)</b><br>El papel del docente: Quiénes (Segunda parte)</b><br>Profundicemos en el papel de directores y tutores en el programa Construye T. ¿Qué deben tomar en cuenta y qué deben hacer cada uno de ustedes? Veamos los siguientes videos. </small>';
+        }
+        function cambio57(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/eEyb3STnPjs';
+        document.getElementById('textintro').innerHTML = '<b>2.- Quiénes y visión</b><br><small><b>El papel de directores y tutores Construye T como líderes del programa: Quiénes (Tercera parte)</b><br>Profundicemos en el papel de directores y tutores en el programa Construye T. ¿Qué deben tomar en cuenta y qué deben hacer cada uno de ustedes? Veamos los siguientes videos.<br>El papel de directores y tutores Construye T como líderes del programa</small>';
+        }
+        function cambio58(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/vision_en_cuatro_pasos.mp3';;
+        document.getElementById('textintro').innerHTML = '<b>2.- Quiénes y visión</b><br><small><b>Visión en cuatro pasos</b><br>Escucha esta reflexión guiada, es un ejercicio inspirador que fortalece nuestro sentido de motivación y dirección en la vida.<br>Escucha el siguiente audio que puedes descargar con una reflexión guiada.</small>';
+        }
+      function cambio59(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/Pq4xOdHOOOk?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- Materiales, estrategia de capacitación y primeros pasos</b><br><small><b>Materiales y estrategia de capacitación (Primera parte)</b><br>Y ahora revisemos con más profundidad las actividades concretas que se llevarán a cabo dentro del programa. ¡Tomen nota directores, tutores Construye T y maestros!<br>Materiales del programa<br>Estrategia de implementación</small>';
+        }
+        function cambio60(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/edsqHcaQIGo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- Materiales, estrategia de capacitación y primeros pasos</b><br><small><b>Materiales y estrategia de capacitación (Segunda parte)</b><br>Y ahora revisemos con más profundidad las actividades concretas que se llevarán a cabo dentro del programa. ¡Tomen nota directores, tutores Construye T y maestros!<br>Los recursos con los que cuenta el docente, tutor Construye T y director para implementar el programa.<br>La estrategia de capacitación.</small>';
+        }
+        function cambio61(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/Ja_aeb4jvj4';
+        document.getElementById('textintro').innerHTML = '<b>3.- Materiales, estrategia de capacitación y primeros pasos</b><br><small><b>Primeros pasos</b><br>El material es amplio, los iremos guiando paso a paso. Veamos como comenzar.<br>Estrategia de seguimiento al programa en tu plantel.<br>Primeros pasos para el director y tutor Construye T</small>';
+        }
+      function cambio62(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/_qC8Dtq-BcA?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>Para saber más...</b><small><b>¿Qué es el efecto Pigmalión?</b></small>';
+        }
+        function cambio63(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/Xn3qh97KV2c?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>Para saber más...</b><small><b>¿Qué es una mentalidad de crecimiento?</b></small>';
+        }
+        function cambio64(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/infografia_programa_ConstruyeT.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Para saber más...</b><small><b>Infografía.- Capacitación en Construye T</b></small>';
+        }
+        function cambio65(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/preguntas_frecuentes.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Para saber más...</b><small><b>Preguntas frecuentes acerca del Programa Construye T y su implantación</b></small>';
+        }
+        function cambio66(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/perfil_parametros_e_indicadores_para_docentes_y_tecnicos_en_ems.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Para saber más...</b><small><b>Perfil, parámetros e indicadores para Docentes y Técnicos Docentes en EMS</b></small>';
+        }
+        function cambio67(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/formato_asignacion_de_variaciones.xlsx';
+        document.getElementById('textintro').innerHTML = '<b>Para saber más...</b><small><b>Formato de asignación de variaciones del programa Construye T</b></small>';
+        }
+      function cambio68(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/puntos_esenciales_sesion_4.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales Sesión 4</b>';
+        }
+      function cambio69(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/CRWlmzRuiyM?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>Cierre de curso</b>';
+        }
+      function cambio70(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/perfil_parametros_e_indicadores_para_docentes_y_tecnicos_en_ems.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Perfil, parámetros e indicadores para docentes y técnicos docentes en EMS</b>';
+        }
+      function cambio71(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/vision_en_cuatro_pasos.mp3';
+        document.getElementById('textintro').innerHTML = '<b>Visión en cuatro pasos</b>';
+        }
+      function cambio72(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/formato_asignacion_de_variaciones.xlsx';
+        document.getElementById('textintro').innerHTML = '<b>Formato asignación de variaciones</b>';
+        }
+        function cambio73(){
+        top.frames['vidframe'].location.href = 'CURSO BASICO/Programa lideres Construye T/Sesión 4. Primeros pasos para arrancar el programa/infografia_programa_ConstruyeT.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Infografía programa Construye T</b>';
+        }
+      
+    </script>
+  </div>
+
+
+<br><br>
+
+
+
+
+
+ 
+
+
+  
+
+
+
+
+
+
+<!-- aqui va el texto del footer -->
+
+
+
+<div class="footer">
+<div class="container">
+  <div class="col-sm-4">
+    <br><br>
+    <h5>Enlaces</h5><br>
+
+
+    <a target="_blank" href="http://reformas.gob.mx/" style="color: white;"> Reformas</a><br>
+    <a target="_blank" href="http://portaltransparencia.gob.mx/buscador/search/search.do?method=begin" style="color: white;"> Portal de Obligaciones de Transparencia</a><br>
+    <a target="_blank" href="https://www.infomex.org.mx/gobiernofederal/home.action" style="color: white;"> Sistema Infomex</a><br>
+    <a target="_blank" href="http://inicio.ifai.org.mx/SitePages/ifai.aspx" style="color: white;">INAI</a><br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <img src="img/gob_mx.jpg"> <br> <br> <br> <br>
+  </div>
+  <div class="col-sm-4">
+    <br><br>
+    <h5>¿Qué es gob.mx?</h5><br>
+
+    Es el portal único de trámites, información y participación ciudadana. <a target="_blank" href="https://www.gob.mx/que-es-gobmx" style="color: white;">Leer más</a><br>
+
+    <a target="_blank" href="https://www.gob.mx/en/index" style="color: white;"> English</a><br>
+    <a target="_blank" href="https://www.gob.mx/temas" style="color: white;">Temas</a><br>
+    <a target="_blank" href="https://www.gob.mx/accesibilidad" style="color: white;">Declaración de Accesibilidad</a><br>
+    <a target="_blank" href="https://www.gob.mx/privacidadintegral" style="color: white;">Aviso de privacidad integral</a><br>
+    <a target="_blank" href="https://www.gob.mx/privacidadsimplificado" style="color: white;">Aviso de privacidad simplificado</a><br>
+    <a target="_blank" href="https://www.gob.mx/terminos" style="color: white;">Términos y Condiciones</a><br>
+    <a target="_blank" href="https://www.gob.mx/terminos#medidas-seguridad-informacion" style="color: white;">Política de seguridad</a><br>
+    <a target="_blank" href="http://www.ordenjuridico.gob.mx/" style="color: white;">Marco Jurídico</a><br>
+    <a target="_blank" href="https://www.gob.mx/sitemap" style="color: white;">Mapa de sitio</a><br>
+  </div>
+  <div class="col-sm-4">
+    <br><br>
+    <h5>Contacto</h5><br>
+
+     Mesa de ayuda: dudas e información<br>
+gobmx@funcionpublica.gob.mx<br>
+
+<a target="_blank" href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54" style="color: white;">Denuncia contra servidores públicos</a><br>
+<br>
+
+  </div>
+</div> 
+
+</div>
+
+ 
+
+</body>
+</html>

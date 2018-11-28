@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Construye T</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/estilosorg.css">
+</head>
+<style>
+  .footer {
+  
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #393b3c;
+   color: white;
+   font-family:  sans-serif;
+   font-size: 15px;
+
+}
+</style>
+<body>
+<!-- header gobmx -->
+<nav class="  navbar-fixed-top" style="background-color: #393c3e; color: white;">
+        <div class="container">
+            
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      
+      </button>
+      <a class="navbar-brand" href="https://www.gob.mx/"><img src="img/gob_mx.jpg"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a style="color: white;" href="https://www.gob.mx/tramites">Trámites </a></li>
+        <li><a style="color: white;" href="https://www.gob.mx/gobierno">Gobierno </a></li>
+        <li><a style="color: white;"  href="https://www.gob.mx/participa/inicio">Participa </a></li>
+        <li><a style="color: white;"  href="https://www.gob.mx/busqueda?utf8=%E2%9C%93&site=participa&q="> <span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  
+       
+    </nav>
+    <!--Second nav bar-->
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top:50px;height:50px;min-height:50px;background:#fff;border-color:#eb6e1f;border-width:0 0 2px;">
+        <div class="container">
+            <div class="navbar-header" style="padding-left: 15px;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" >
+                   CONSTRUYE  T
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav navbar-right navStyle" style="background:#fff;">
+                     <li><a href="HSE.html">HSE</a></li>
+                      <li><a href="Implementación.html">Implementación</a></li>
+                      <li><a href="Lecciones.html">Lecciones</a></li>
+                      <li><a href="Cursos.html">Cursos</a></li>
+                      <li><a href="Otros Materiales.html">Otros materiales</a></li>
+                      <li>
+                         <form class="navbar-form navbar-left" action="search.html">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar" style="width: 180px;">
+                            <div class="input-group-btn">
+                              <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </form> 
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<br><br>
+
+
+<br><br>
+<style type="text/css">
+  .botonSIG{
+    width: 100px; 
+    height: 30px; 
+    background-color: black;
+    text-align: center; 
+    cursor: pointer;
+    right: 15px;
+    position: absolute;
+    border-radius: 10px;
+    
+  }
+  .botonSIG a{
+    text-decoration: none;
+    color: white;
+  }
+  .botonATR{
+    width: 100px; 
+    height: 30px; 
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    cursor: pointer;
+    left: 15px;
+    position: absolute;
+    border-radius: 10px;
+  }
+  .botonATR a{
+    text-decoration: none;
+    color: white;
+  }
+  .divselec:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+  }
+  li{
+    list-style:none;
+  }
+  .activa{
+  background-color:lightblue;
+  }
+  .activa2{
+  background-color:white;
+  }
+
+</style>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"><h3>Conocer y regular emociones</h3>
+        <div style="height: 700px; overflow-y: scroll; overflow-x: hidden;">
+        <ul class="nav" id="accordion1">
+            <li class="panel" style="border-style: none;"><a data-toggle="collapse" data-parent="#accordion1" href="#PrimerLink">Conocer y regular emociones</a>
+                <ul id="PrimerLink" class="collapse">
+                    <li><div onclick="cambio1();" class="divselec" id="op1" >Mapa de ruta curso avanzado</div></li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#SegundoLink">Sesión 1.- Conocer las emociones</a>
+                <ul id="SegundoLink" class="collapse">
+                    <li><div onclick="cambio2();" class="divselec" id="op2" >Guía de aprendizaje</div></li>
+                    <li><div onclick="cambio3();" class="divselec" id="op3" >Puntos esenciales</div></li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-aLink">1.- Entender las emociones y su importancia</div>
+                      <ul id="sub-aLink" class="collapse">
+                          <li><div onclick="cambio4();" class="divselec" id="op4">¿Qué son las emociones? (I)</div></li>
+                          <li><div onclick="cambio5();" class="divselec" id="op5">¿Qué son las emociones? (II)</div></li>
+                          <li><div onclick="cambio6();" class="divselec" id="op6">¿Qué son las emociones? (III)</div></li>
+                          <li><div onclick="cambio7();" class="divselec" id="op7">Para reflexionar</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-bLink">2.- Cómo influyen las emociones en nuestra experiencia de vida</div>
+                      <ul id="sub-bLink" class="collapse">
+                          <li><div onclick="cambio8();" class="divselec" id="op8">Las emociones y el aprendizaje (I)</div></li>
+                          <li><div onclick="cambio9();" class="divselec" id="op9">Las emociones y el aprendizaje (II)</div></li>
+                          <li><div onclick="cambio10();" class="divselec" id="op10">Cómo influyen las emociones en nuestra experiencia de vida</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-cLink">3.- Las emociones como proceso</div>
+                      <ul id="sub-cLink" class="collapse">
+                          <li><div onclick="cambio11();" class="divselec" id="op11">El episodio emocional en cinco fases (I)</div></li>
+                          <li><div onclick="cambio12();" class="divselec" id="op12">Un caso en la vida escolar</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-dLink">4.- El funcionamiento del cerebro y las emociones</div>
+                      <ul id="sub-dLink" class="collapse">
+                          <li><div onclick="cambio13();" class="divselec" id="op13">El funcionamiento del cerebro</div></li>
+                          <li><div onclick="cambio14();" class="divselec" id="op14">Dr Daniel Siegel.- Modelo de la mano</div></li>
+                          <li><div onclick="cambio15();" class="divselec" id="op15">Recuento y despedida</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-eLink">Recursos Complementarios</div>
+                      <ul id="sub-eLink" class="collapse">
+                          <li><div onclick="cambio16();" class="divselec" id="op16">Recursos Complementarios</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-fLink">Material para descargar</div>
+                      <ul id="sub-fLink" class="collapse">
+                          <li><div onclick="cambio17();" class="divselec" id="op17">La importancia de las emociones en la vida</div></li>
+                          <li><div onclick="cambio18();" class="divselec" id="op18">Un caso en la vida escolar</div></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#TerceroLink">Sesión 2.- Emociones que ayudan y emociones que obstaculizan</a>
+                <ul id="TerceroLink" class="collapse">
+                    <li><div onclick="cambio19();" class="divselec" id="op19">Guía de aprendizaje</div></li>
+                    <li><div onclick="cambio20();" class="divselec" id="op20">Puntos esenciales</div></li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-gLink">1.- Emociones que ayudan y emociones que obstaculizan</div>
+                      <ul id="sub-gLink" class="collapse">
+                          <li><div onclick="cambio21();" class="divselec" id="op21">Bienvenido a la sesión 2</div></li>
+                          <li><div onclick="cambio22();" class="divselec" id="op22">Definición de emociones constructivas y destructivas</div></li>
+                          <li><div onclick="cambio23();" class="divselec" id="op23">Clasificar emociones (I)</div></li>
+                          <li><div onclick="cambio24();" class="divselec" id="op24">Clasificar emociones (II)</div></li>
+                          <li><div onclick="cambio25();" class="divselec" id="op25">Clasificar emociones (III)</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-hLink">2.- El aspecto dual de las emociones</div>
+                      <ul id="sub-hLink" class="collapse">
+                          <li><div onclick="cambio26();" class="divselec" id="op26">El aspecto dual de las emociones</div></li>
+                          <li><div onclick="cambio27();" class="divselec" id="op27">¿Cuándo son destructivas las emociones?</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-iLink">3.- Emociones destructivas</div>
+                      <ul id="sub-iLink" class="collapse">
+                          <li><div onclick="cambio28();" class="divselec" id="op28">El costo de las emociones destructivas</div></li>
+                          <li><div onclick="cambio29();" class="divselec" id="op29">Rasgos comunes de las emociones destructivas</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-jLink">4.- Las emociones constructivas</div>
+                      <ul id="sub-jLink" class="collapse">
+                          <li><div onclick="cambio30();" class="divselec" id="op30">Las emociones constructivas</div></li>
+                          <li><div onclick="cambio31();" class="divselec" id="op31">Reclasificar las emociones</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-kLink">5.- El lenguaje emocional</div>
+                      <ul id="sub-kLink" class="collapse">
+                          <li><div onclick="cambio32();" class="divselec" id="op32">El lenguaje emocional</div></li>
+                          <li><div onclick="cambio33();" class="divselec" id="op33">El diccionario de las emociones</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-lLink">Recursos complementarios</div>
+                      <ul id="sub-lLink" class="collapse">
+                          <li><div onclick="cambio34();" class="divselec" id="op34">El termómetro de las emociones</div></li>
+                          <li><div onclick="cambio35();" class="divselec" id="op35">Recurso Complementario</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-mLink">Material para descargar</div>
+                      <ul id="sub-mLink" class="collapse">
+                          <li><div onclick="cambio36();" class="divselec" id="op36">Rasgos comunes y desventajas de emociones destructivas</div></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#CuartoLink">Sesión 3.- Cómo regular las emociones I: estrategias atencionales</a>
+                <ul id="CuartoLink" class="collapse">
+                    <li onclick="cambio37();" class="divselec" id="op37">Guía de aprendizaje</li>
+                    <li onclick="cambio38();" class="divselec" id="op38">Puntos esenciales</li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-nLink">1.- Cómo trabajar las emociones destructivas</div>
+                      <ul id="sub-nLink" class="collapse">
+                          <li><div onclick="cambio39();" class="divselec" id="op39">Bienvenido a la sesión 3</div></li>
+                          <li><div onclick="cambio40();" class="divselec" id="op40">Cómo trabajar con emociones destructivas</div></li>
+                          <li><div onclick="cambio41();" class="divselec" id="op41">Un modelo de la mente: regular emociones a través de calmar la mente y técnica de atención al respirar. (I)</div></li>
+                          <li><div onclick="cambio42();" class="divselec" id="op42">La atención del respirar.</div></li>
+                          <li><div onclick="cambio43();" class="divselec" id="op43">Un modelo de la mente: regular emociones a través de calmar la mente y técnica de atención al respirar. (II)</div></li>
+                          <li><div onclick="cambio44();" class="divselec" id="op44">La atención del respirar.</div></li>
+                          <li><div onclick="cambio45();" class="divselec" id="op45">¿Vale la pena?</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-oLink">2.- Regular las emociones a través de entrenar la atención</div>
+                      <ul id="sub-oLink" class="collapse">
+                          <li><div onclick="cambio46();" class="divselec" id="op46">¿Qué es la atención?</div></li>
+                          <li><div onclick="cambio47();" class="divselec" id="op47">Los desbalances de la atención</div></li>
+                          <li><div onclick="cambio48();" class="divselec" id="op48">La regulación de la atención para el desarrollo de HSE</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-pLink">3.- Desventajas, ventajas y potencial de entrenar la atención</div>
+                      <ul id="sub-pLink" class="collapse">
+                          <li><div onclick="cambio49();" class="divselec" id="op49">¿Nos conviene entrenar la atención?</div></li>
+                          <li><div onclick="cambio50();" class="divselec" id="op50">PARAR (I)</div></li>
+                          <li><div onclick="cambio51();" class="divselec" id="op51">PARAR (II)</div></li>
+                          <li><div onclick="cambio52();" class="divselec" id="op52">¡Atención!</div></li>
+                          <li><div onclick="cambio53();" class="divselec" id="op53">Infografía.- La ciencia de la atención: ¿Nos conviene entrenarla? Y la atención en la educación</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-qLink">4.- La atención como habilidad transversal para el desarrollo de HSE</div>
+                      <ul id="sub-qLink" class="collapse">
+                          <li><div onclick="cambio54();" class="divselec" id="op54">La atención como habilidad transversal para el desarrollo de HSE</div></li>
+                          <li><div onclick="cambio55();" class="divselec" id="op55">¿Vale la pena? (Reconsideración)</div></li>
+                      </ul>
+                    </li>
+
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-rLink">Recursos complementarios</div>
+                      <ul id="sub-rLink" class="collapse">
+                          <li><div onclick="cambio56();" class="divselec" id="op56">Atención al respirar</div></li>
+                          <li><div onclick="cambio57();" class="divselec" id="op57">Atención al respirar</div></li>
+                          <li><div onclick="cambio58();" class="divselec" id="op58">Audio técnica: Atención a la respiración contando</div></li>
+                          <li><div onclick="cambio59();" class="divselec" id="op59">Recurso Complementario</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-sLink">Material para descargar</div>
+                      <ul id="sub-sLink" class="collapse">
+                          <li><div onclick="cambio60();" class="divselec" id="op60">La ciencia de la atención</div></li>
+                          <li><div onclick="cambio61();" class="divselec" id="op61">La regulación de la atención</div></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="panel" style="border-style: none;"> <a data-toggle="collapse" data-parent="#accordion1" href="#QuintoLink">Sesión 4.- Cómo regular las emociones II: estrategias cognitivas</a>
+                <ul id="QuintoLink" class="collapse">
+                  <li><div onclick="cambio62();" class="divselec" id="op62">Guía de aprendizaje</div></li>
+                  <li><div onclick="cambio63();" class="divselec" id="op63">Puntos esenciales</div></li>
+                  <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-tLink">1.- Regular las emociones a través del cambio cognitivo</div>
+                      <ul id="sub-tLink" class="collapse">
+                          <li><div onclick="cambio64();" class="divselec" id="op64">Cómo generar un cambio</div></li>
+                          <li><div onclick="cambio65();" class="divselec" id="op65">La historia de la serpiente (I)</div></li>
+                          <li><div onclick="cambio66();" class="divselec" id="op66">La historia de la serpiente (II)</div></li>
+                          <li><div onclick="cambio67();" class="divselec" id="op67">Explorar nuestras serpientes</div></li>
+                          <li><div onclick="cambio68();" class="divselec" id="op68">3 minutos para aquietar la mente</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-uLink">2.- Las ventajas de una mente clara que discierne</div>
+                      <ul id="sub-uLink" class="collapse">
+                          <li><div onclick="cambio69();" class="divselec" id="op69">Una mente clara, el antídoto de la confusión</div></li>
+                          <li><div onclick="cambio70();" class="divselec" id="op70">Empatía Clínica</div></li>
+                          <li><div onclick="cambio71();" class="divselec" id="op71">Revaloración cognitiva: Ver con otros ojos</div></li>
+                          <li><div onclick="cambio72();" class="divselec" id="op72">Revaloración cognitiva: Ver con otros ojos (II)</div></li>
+                          <li><div onclick="cambio73();" class="divselec" id="op73">¿Qué ves aquí?</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-vLink">3.- La claridad mental como herramienta transversal</div>
+                      <ul id="sub-vLink" class="collapse">
+                          <li><div onclick="cambio74();" class="divselec" id="op74">Cierre</div></li>
+                          <li><div onclick="cambio75();" class="divselec" id="op75">Claridad mental y disposiciones mentales: la importancia de entender cómo pensamos</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-wLink">Recurso Complementarios</div>
+                      <ul id="sub-wLink" class="collapse">
+                          <li><div onclick="cambio76();" class="divselec" id="op76">Recurso Complementario</div></li>
+                          <li><div onclick="cambio77();" class="divselec" id="op77">Claridad mental y disposiciones mentales</div></li>
+                          <li><div onclick="cambio78();" class="divselec" id="op78">Claridad mental y mentalidad de crecimiento</div></li>
+                      </ul>
+                    </li>
+                    <li class="panel-2" style="border-style: none; cursor: pointer;"><div data-toggle="collapse" href="#sub-xLink">Material para descargar</div>
+                      <ul id="sub-xLink" class="collapse">
+                          <li><div onclick="cambio79();" class="divselec" id="op79">¿Qué ves aquí?</div></li>
+                          <li><div onclick="cambio80();" class="divselec" id="op80">Claridad mental</div></li>
+                      </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      </div> 
+      </div> 
+      <div class="col-sm-8" >
+        <div><h1>Conocer y regular emociones</h1></div>
+        <div><h3 id="textintro"></h3></div>
+        <div><iframe width="100%" height="500" name="vidframe" src="" frameborder="0" allowfullscreen></iframe></div>
+        <!--Conocer y regular emociones-->
+        <div class="ocultox" id="oculto1" style="display: none;"><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#SegundoLink" id="cambio2" onclick="cambio2();">Siguiente</a></div></div>
+        <!--Sesion 1-->
+        <div class="ocultox" id="oculto2" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#PrimerLink" id="cambio1r" onclick="cambio1();">Anterior</a></div><div class="botonSIG"><a id="cambio3" onclick="cambio3();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto3" style="display: none;"><div class="botonATR"><a id="cambio2r" onclick="cambio2();">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-aLink" id="cambio4" onclick="cambio4();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto4" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-aLink" id="cambio3r" onclick="cambio3();">Anterior</a></div><div class="botonSIG"><a id="cambio5" onclick="cambio5();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto5" style="display: none;"><div class="botonATR"><a id="cambio4r" onclick="cambio4();">Anterior</a></div><div class="botonSIG"><a id="cambio6" onclick="cambio6();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto6" style="display: none;"><div class="botonATR"><a id="cambio5r" onclick="cambio5();">Anterior</a></div><div class="botonSIG"><a id="cambio7" onclick="cambio7();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto7" style="display: none;"><div class="botonATR"><a id="cambio6r" onclick="cambio6();">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-bLink" id="cambio8" onclick="cambio8();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto8" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-bLink" id="cambio7r" onclick="cambio7(); ">Anterior</a></div><div class="botonSIG"><a id="cambio9" onclick="cambio9();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto9" style="display: none;"><div class="botonATR"><a id="cambio8r" onclick="cambio8(); ">Anterior</a></div><div class="botonSIG"><a id="cambio10" onclick="cambio10();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto10" style="display: none;"><div class="botonATR"><a id="cambio9r" onclick="cambio9(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-cLink" id="cambio11" onclick="cambio11();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto11" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-cLink" id="cambio10r" onclick="cambio10();">Anterior</a></div><div class="botonSIG"><a id="cambio12" onclick="cambio12();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto12" style="display: none;"><div class="botonATR"><a id="cambio11r" onclick="cambio11();">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-dLink" id="cambio13" onclick="cambio13();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto13" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-dLink" id="cambio12r" onclick="cambio12(); ">Anterior</a></div><div class="botonSIG"><a id="cambio14" onclick="cambio14();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto14" style="display: none;"><div class="botonATR"><a id="cambio13r" onclick="cambio13(); ">Anterior</a></div><div class="botonSIG"><a id="cambio15" onclick="cambio15();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto15" style="display: none;"><div class="botonATR"><a id="cambio14r" onclick="cambio14(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-eLink" id="cambio16" onclick="cambio16();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto16" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-eLink" id="cambio15r" onclick="cambio15(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-fLink" id="cambio17" onclick="cambio17();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto17" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-fLink" id="cambio16r" onclick="cambio16(); ">Anterior</a></div><div class="botonSIG"><a id="cambio18" onclick="cambio18();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto18" style="display: none;"><div class="botonATR"><a id="cambio17r" onclick="cambio17(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#TerceroLink" onclick="cambio19();">Siguiente</a></div></div>
+
+        <!--Sesion 2-->
+
+        <div class="ocultox" id="oculto19" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#SegundoLink" id="cambio18r" onclick="cambio18(); ">Anterior</a></div><div class="botonSIG"><a id="cambio20" onclick="cambio20();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto20" style="display: none;"><div class="botonATR"><a id="cambio19r" onclick="cambio19(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-gLink" id="cambio21" onclick="cambio21();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto21" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-gLink" id="cambio20r" onclick="cambio20(); ">Anterior</a></div><div class="botonSIG"><a id="cambio22" onclick="cambio22();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto22" style="display: none;"><div class="botonATR"><a id="cambio21r" onclick="cambio21(); ">Anterior</a></div><div class="botonSIG"><a id="cambio23" onclick="cambio23();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto23" style="display: none;"><div class="botonATR"><a id="cambio22r" onclick="cambio22(); ">Anterior</a></div><div class="botonSIG"><a id="cambio24" onclick="cambio24();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto24" style="display: none;"><div class="botonATR"><a id="cambio23r" onclick="cambio23(); ">Anterior</a></div><div class="botonSIG"><a id="cambio25" onclick="cambio25();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto25" style="display: none;"><div class="botonATR"><a id="cambio24r" onclick="cambio24(); ">Anterior</a></div><div class="botonSIG"><a id="cambio26" data-toggle="collapse" href="#sub-hLink" onclick="cambio26();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto26" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-hLink" id="cambio25r" onclick="cambio25(); ">Anterior</a></div><div class="botonSIG"><a id="cambio27" onclick="cambio27();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto27" style="display: none;"><div class="botonATR"><a id="cambio26r" onclick="cambio26(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-iLink" id="cambio28" onclick="cambio28();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto28" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-iLink" id="cambio27r" onclick="cambio27(); ">Anterior</a></div><div class="botonSIG"><a id="cambio29" onclick="cambio29();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto29" style="display: none;"><div class="botonATR"><a id="cambio28r" onclick="cambio28(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-jLink" id="cambio30" onclick="cambio30();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto30" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-jLink" id="cambio29r" onclick="cambio29(); ">Anterior</a></div><div class="botonSIG"><a id="cambio31" onclick="cambio31();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto31" style="display: none;"><div class="botonATR"><a id="cambio30r" onclick="cambio30(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-kLink" id="cambio32" onclick="cambio32();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto32" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-kLink" id="cambio31r" onclick="cambio31(); ">Anterior</a></div><div class="botonSIG"><a id="cambio33" onclick="cambio33();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto33" style="display: none;"><div class="botonATR"><a id="cambio32r" onclick="cambio32(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-lLink" id="cambio34" onclick="cambio34();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto34" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-lLink" id="cambio33r" onclick="cambio33(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#SubCuartoLink" id="cambio35" onclick="cambio35();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto35" style="display: none;"><div class="botonATR"><a id="cambio34r" onclick="cambio34(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-mLink" id="cambio36" onclick="cambio36();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto36" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-mLink" id="cambio35r" onclick="cambio35(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#CuartoLink" id="cambio37" onclick="cambio37();">Siguiente</a></div></div>
+
+        <!--sesion 3-->
+
+        <div class="ocultox" id="oculto37" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#TerceroLink" id="cambio36r" onclick="cambio36(); ">Anterior</a></div><div class="botonSIG"><a id="cambio38" onclick="cambio38();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto38" style="display: none;"><div class="botonATR"><a id="cambio37r" onclick="cambio37(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-nLink" id="cambio39" onclick="cambio39();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto39" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-nLink" id="cambio38r" onclick="cambio38(); ">Anterior</a></div><div class="botonSIG"><a id="cambio40" onclick="cambio40();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto40" style="display: none;"><div class="botonATR"><a id="cambio39r" onclick="cambio39(); ">Anterior</a></div><div class="botonSIG"><a id="cambio41" onclick="cambio41();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto41" style="display: none;"><div class="botonATR"><a id="cambio40r" onclick="cambio40(); ">Anterior</a></div><div class="botonSIG"><a id="cambio42" onclick="cambio42();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto42" style="display: none;"><div class="botonATR"><a id="cambio41r" onclick="cambio41(); ">Anterior</a></div><div class="botonSIG"><a id="cambio43" onclick="cambio43();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto43" style="display: none;"><div class="botonATR"><a id="cambio42r" onclick="cambio42(); ">Anterior</a></div><div class="botonSIG"><a id="cambio44" onclick="cambio44();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto44" style="display: none;"><div class="botonATR"><a id="cambio43r" onclick="cambio43(); ">Anterior</a></div><div class="botonSIG"><a id="cambio45" onclick="cambio45();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto45" style="display: none;"><div class="botonATR"><a id="cambio44r" onclick="cambio44(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-oLink" id="cambio46" onclick="cambio46();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto46" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-oLink" id="cambio45r" onclick="cambio45(); ">Anterior</a></div><div class="botonSIG"><a id="cambio47" onclick="cambio47();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto47" style="display: none;"><div class="botonATR"><a id="cambio46r" onclick="cambio46(); ">Anterior</a></div><div class="botonSIG"><a id="cambio48" onclick="cambio48();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto48" style="display: none;"><div class="botonATR"><a id="cambio47r" onclick="cambio47(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-pLink" id="cambio49" onclick="cambio49();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto49" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-pLink" id="cambio48r" onclick="cambio48(); ">Anterior</a></div><div class="botonSIG"><a id="cambio50" onclick="cambio50();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto50" style="display: none;"><div class="botonATR"><a id="cambio49r" onclick="cambio49(); ">Anterior</a></div><div class="botonSIG"><a id="cambio51" onclick="cambio52();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto51" style="display: none;"><div class="botonATR"><a id="cambio50r" onclick="cambio50(); ">Anterior</a></div><div class="botonSIG"><a id="cambio52" onclick="cambio52();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto52" style="display: none;"><div class="botonATR"><a id="cambio51r" onclick="cambio51(); ">Anterior</a></div><div class="botonSIG"><a id="cambio53" onclick="cambio53();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto53" style="display: none;"><div class="botonATR"><a id="cambio52r" onclick="cambio52(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-qLink" id="cambio54" onclick="cambio54();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto54" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-qLink" id="cambio53r" onclick="cambio53(); ">Anterior</a></div><div class="botonSIG"><a id="cambio55" onclick="cambio55();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto55" style="display: none;"><div class="botonATR"><a id="cambio54r" onclick="cambio54(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-rLink" id="cambio56" onclick="cambio56();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto56" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-rLink" id="cambio55r" onclick="cambio55(); ">Anterior</a></div><div class="botonSIG"><a id="cambio57" onclick="cambio57();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto57" style="display: none;"><div class="botonATR"><a id="cambio56r" onclick="cambio56(); ">Anterior</a></div><div class="botonSIG"><a id="cambio58" onclick="cambio58();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto58" style="display: none;"><div class="botonATR"><a id="cambio57r" onclick="cambio57(); ">Anterior</a></div><div class="botonSIG"><a id="cambio59" onclick="cambio59();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto59" style="display: none;"><div class="botonATR"><a id="cambio58r" onclick="cambio58(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-sLink" id="cambio60" onclick="cambio60();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto60" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-sLink" id="cambio59r" onclick="cambio59(); ">Anterior</a></div><div class="botonSIG"><a id="cambio61" onclick="cambio61();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto61" style="display: none;"><div class="botonATR"><a id="cambio60r" onclick="cambio60(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" data-parent="#accordion1" href="#QuintoLink" id="cambio62" onclick="cambio62();">Siguiente</a></div></div>
+
+        <!--sesion 4-->
+
+        <div class="ocultox" id="oculto62" style="display: none;"><div class="botonATR"><a data-toggle="collapse" data-parent="#accordion1" href="#CuartoLink" id="cambio61r" onclick="cambio61(); ">Anterior</a></div><div class="botonSIG"><a id="cambio63" onclick="cambio63();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto63" style="display: none;"><div class="botonATR"><a id="cambio62r" onclick="cambio62(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-tLink" id="cambio64" onclick="cambio64();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto64" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-tLink" id="cambio63r" onclick="cambio63(); ">Anterior</a></div><div class="botonSIG"><a id="cambio65" onclick="cambio65();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto65" style="display: none;"><div class="botonATR"><a id="cambio64r" onclick="cambio64(); ">Anterior</a></div><div class="botonSIG"><a id="cambio66" onclick="cambio66();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto66" style="display: none;"><div class="botonATR"><a id="cambio65r" onclick="cambio65(); ">Anterior</a></div><div class="botonSIG"><a id="cambio67" onclick="cambio67();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto67" style="display: none;"><div class="botonATR"><a id="cambio66r" onclick="cambio66(); ">Anterior</a></div><div class="botonSIG"><a id="cambio68" onclick="cambio68();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto68" style="display: none;"><div class="botonATR"><a id="cambio67r" onclick="cambio67(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-uLink" id="cambio69" onclick="cambio69();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto69" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-uLink" id="cambio68r" onclick="cambio68(); ">Anterior</a></div><div class="botonSIG"><a id="cambio70" onclick="cambio70();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto70" style="display: none;"><div class="botonATR"><a id="cambio69r" onclick="cambio69(); ">Anterior</a></div><div class="botonSIG"><a id="cambio71" onclick="cambio71();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto71" style="display: none;"><div class="botonATR"><a id="cambio70r" onclick="cambio70(); ">Anterior</a></div><div class="botonSIG"><a id="cambio72" onclick="cambio72();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto72" style="display: none;"><div class="botonATR"><a id="cambio71r" onclick="cambio71(); ">Anterior</a></div><div class="botonSIG"><a id="cambio73" onclick="cambio73();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto73" style="display: none;"><div class="botonATR"><a id="cambio72r" onclick="cambio72(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-vLink" id="cambio74" onclick="cambio74();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto74" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-vLink" id="cambio73r" onclick="cambio73(); ">Anterior</a></div><div class="botonSIG"><a id="cambio75" onclick="cambio75();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto75" style="display: none;"><div class="botonATR"><a id="cambio74r" onclick="cambio74(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-wLink" id="cambio76" onclick="cambio76();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto76" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-wLink" id="cambio75r" onclick="cambio75(); ">Anterior</a></div><div class="botonSIG"><a id="cambio77" onclick="cambio77();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto77" style="display: none;"><div class="botonATR"><a id="cambio76r" onclick="cambio76(); ">Anterior</a></div><div class="botonSIG"><a id="cambio78" onclick="cambio78();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto78" style="display: none;"><div class="botonATR"><a id="cambio77r" onclick="cambio77(); ">Anterior</a></div><div class="botonSIG"><a data-toggle="collapse" href="#sub-xLink" id="cambio79" onclick="cambio79();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto79" style="display: none;"><div class="botonATR"><a data-toggle="collapse" href="#sub-xLink" id="cambio78r" onclick="cambio78(); ">Anterior</a></div><div class="botonSIG"><a id="cambio80" onclick="cambio80();">Siguiente</a></div></div>
+        <div class="ocultox" id="oculto80" style="display: none;"><div class="botonATR"><a id="cambio79r" onclick="cambio79(); ">Anterior</a></div></div>
+        
+    </div>
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        $(".panel li").on("click", function(){
+          $(".panel").find(".activa").removeClass("activa");
+          $(this).addClass("activa");
+        });
+        $(".panel-2 li").on("click", function(){
+          $(".panel").find(".activa2").removeClass("activa2");
+          $(this).addClass("activa2");
+        });
+      });
+
+      $(document).ready(function(){
+        $("#op1").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op1").click(function(){
+          $("#oculto1").show();
+        });
+        $("#op2").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op2").click(function(){
+          $("#oculto2").show();
+        });
+        $("#op3").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op3").click(function(){
+          $("#oculto3").show();
+        });
+        $("#op4").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op4").click(function(){
+          $("#oculto4").show();
+        });
+        $("#op5").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op5").click(function(){
+          $("#oculto5").show();
+        });
+        $("#op6").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op6").click(function(){
+          $("#oculto6").show();
+        });
+        $("#op7").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op7").click(function(){
+          $("#oculto7").show();
+        });
+        $("#op8").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op8").click(function(){
+          $("#oculto8").show();
+        });
+        $("#op9").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op9").click(function(){
+          $("#oculto9").show();
+        });
+        $("#op10").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op10").click(function(){
+          $("#oculto10").show();
+        });
+        $("#op11").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op11").click(function(){
+          $("#oculto11").show();
+        });
+        $("#op12").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op12").click(function(){
+          $("#oculto12").show();
+        });
+        $("#op13").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op13").click(function(){
+          $("#oculto13").show();
+        });
+        $("#op14").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op14").click(function(){
+          $("#oculto14").show();
+        });
+        $("#op15").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op15").click(function(){
+          $("#oculto15").show();
+        });
+        $("#op16").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op16").click(function(){
+          $("#oculto16").show();
+        });
+        $("#op17").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op17").click(function(){
+          $("#oculto17").show();
+        });
+        $("#op18").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op18").click(function(){
+          $("#oculto18").show();
+        });
+        $("#op19").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op19").click(function(){
+          $("#oculto19").show();
+        });
+        $("#op20").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op20").click(function(){
+          $("#oculto20").show();
+        });
+        $("#op21").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op21").click(function(){
+          $("#oculto21").show();
+        });
+        $("#op22").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op22").click(function(){
+          $("#oculto22").show();
+        });
+        $("#op23").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op23").click(function(){
+          $("#oculto23").show();
+        });
+        $("#op24").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op24").click(function(){
+          $("#oculto24").show();
+        });
+        $("#op25").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op25").click(function(){
+          $("#oculto25").show();
+        });
+        $("#op26").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op26").click(function(){
+          $("#oculto26").show();
+        });
+        $("#op27").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op27").click(function(){
+          $("#oculto27").show();
+        });
+        $("#op28").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op28").click(function(){
+          $("#oculto28").show();
+        });
+        $("#op29").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op29").click(function(){
+          $("#oculto29").show();
+        });
+        $("#op30").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op30").click(function(){
+          $("#oculto30").show();
+        });
+        $("#op31").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op31").click(function(){
+          $("#oculto31").show();
+        });
+        $("#op32").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op32").click(function(){
+          $("#oculto32").show();
+        });
+        $("#op33").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op33").click(function(){
+          $("#oculto33").show();
+        });
+        $("#op34").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op34").click(function(){
+          $("#oculto34").show();
+        });
+        $("#op35").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op35").click(function(){
+          $("#oculto35").show();
+        });
+        $("#op36").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op36").click(function(){
+          $("#oculto36").show();
+        });
+        $("#op37").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op37").click(function(){
+          $("#oculto37").show();
+        });
+        $("#op38").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op38").click(function(){
+          $("#oculto38").show();
+        });
+        $("#op39").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op39").click(function(){
+          $("#oculto39").show();
+        });
+        $("#op40").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op40").click(function(){
+          $("#oculto40").show();
+        });
+        $("#op41").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op41").click(function(){
+          $("#oculto41").show();
+        });
+        $("#op42").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op42").click(function(){
+          $("#oculto42").show();
+        });
+        $("#op43").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op43").click(function(){
+          $("#oculto43").show();
+        });
+        $("#op44").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op44").click(function(){
+          $("#oculto44").show();
+        });
+        $("#op45").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op45").click(function(){
+          $("#oculto45").show();
+        });
+        $("#op46").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op46").click(function(){
+          $("#oculto46").show();
+        });
+        $("#op47").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op47").click(function(){
+          $("#oculto47").show();
+        });
+        $("#op48").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op48").click(function(){
+          $("#oculto48").show();
+        });
+        $("#op49").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op49").click(function(){
+          $("#oculto49").show();
+        });
+        $("#op50").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op50").click(function(){
+          $("#oculto50").show();
+        });
+        $("#op51").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op51").click(function(){
+          $("#oculto51").show();
+        });
+        $("#op52").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op52").click(function(){
+          $("#oculto52").show();
+        });
+        $("#op53").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op53").click(function(){
+          $("#oculto53").show();
+        });
+        $("#op54").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op54").click(function(){
+          $("#oculto54").show();
+        });
+        $("#op55").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op55").click(function(){
+          $("#oculto55").show();
+        });
+        $("#op56").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op56").click(function(){
+          $("#oculto56").show();
+        });
+        $("#op57").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op57").click(function(){
+          $("#oculto57").show();
+        });
+        $("#op58").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op58").click(function(){
+          $("#oculto58").show();
+        });
+        $("#op59").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op59").click(function(){
+          $("#oculto59").show();
+        });
+        $("#op60").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op60").click(function(){
+          $("#oculto60").show();
+        });
+        $("#op61").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op61").click(function(){
+          $("#oculto61").show();
+        });
+        $("#op62").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op62").click(function(){
+          $("#oculto62").show();
+        });
+        $("#op63").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op63").click(function(){
+          $("#oculto63").show();
+        });
+        $("#op64").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op64").click(function(){
+          $("#oculto64").show();
+        });
+        $("#op65").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op65").click(function(){
+          $("#oculto65").show();
+        });
+        $("#op66").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op66").click(function(){
+          $("#oculto66").show();
+        });
+        $("#op67").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op67").click(function(){
+          $("#oculto67").show();
+        });
+        $("#op68").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op68").click(function(){
+          $("#oculto68").show();
+        });
+        $("#op69").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op69").click(function(){
+          $("#oculto69").show();
+        });
+        $("#op70").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op70").click(function(){
+          $("#oculto70").show();
+        });
+        $("#op71").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op71").click(function(){
+          $("#oculto71").show();
+        });
+        $("#op72").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op72").click(function(){
+          $("#oculto72").show();
+        });
+        $("#op73").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op73").click(function(){
+          $("#oculto73").show();
+        });
+        $("#op74").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op74").click(function(){
+          $("#oculto74").show();
+        });
+        $("#op75").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op75").click(function(){
+          $("#oculto75").show();
+        });
+        $("#op76").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op76").click(function(){
+          $("#oculto76").show();
+        });
+        $("#op77").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op77").click(function(){
+          $("#oculto77").show();
+        });
+        $("#op78").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op78").click(function(){
+          $("#oculto78").show();
+        });
+        $("#op79").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op79").click(function(){
+          $("#oculto79").show();
+        });
+        $("#op80").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#op80").click(function(){
+          $("#oculto80").show();
+        });
+        
+        $("#cambio1r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio1r").click(function(){
+          $("#oculto1").show();
+        });
+        $("#cambio2").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio2").click(function(){
+          $("#oculto2").show();
+        });
+        $("#cambio2r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio2r").click(function(){
+          $("#oculto2").show();
+        });
+        $("#cambio3").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio3").click(function(){
+          $("#oculto3").show();
+        });
+        $("#cambio3r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio3r").click(function(){
+          $("#oculto3").show();
+        });
+        $("#cambio4").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio4").click(function(){
+          $("#oculto4").show();
+        });
+        $("#cambio4r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio4r").click(function(){
+          $("#oculto4").show();
+        });
+        $("#cambio5").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio5").click(function(){
+          $("#oculto5").show();
+        });
+        $("#cambio5r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio5r").click(function(){
+          $("#oculto5").show();
+        });
+        $("#cambio6").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio6").click(function(){
+          $("#oculto6").show();
+        });
+        $("#cambio6r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio6r").click(function(){
+          $("#oculto6").show();
+        });
+        $("#cambio7").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio7").click(function(){
+          $("#oculto7").show();
+        });
+        $("#cambio7r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio7r").click(function(){
+          $("#oculto7").show();
+        });
+        $("#cambio8").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio8").click(function(){
+          $("#oculto8").show();
+        });
+        $("#cambio8r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio8r").click(function(){
+          $("#oculto8").show();
+        });
+        $("#cambio9").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio9").click(function(){
+          $("#oculto9").show();
+        });
+        $("#cambio9r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio9r").click(function(){
+          $("#oculto9").show();
+        });
+        $("#cambio10").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio10").click(function(){
+          $("#oculto10").show();
+        });
+        $("#cambio10r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio10r").click(function(){
+          $("#oculto10").show();
+        });
+        $("#cambio11").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio11").click(function(){
+          $("#oculto11").show();
+        });
+        $("#cambio11r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio11r").click(function(){
+          $("#oculto11").show();
+        });
+        $("#cambio12").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio12").click(function(){
+          $("#oculto12").show();
+        });
+        $("#cambio12r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio12r").click(function(){
+          $("#oculto12").show();
+        });
+        $("#cambio13").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio13").click(function(){
+          $("#oculto13").show();
+        });
+        $("#cambio13r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio13r").click(function(){
+          $("#oculto13").show();
+        });
+        $("#cambio14").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio14").click(function(){
+          $("#oculto14").show();
+        });
+        $("#cambio14r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio14r").click(function(){
+          $("#oculto14").show();
+        });
+        $("#cambio15").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio15").click(function(){
+          $("#oculto15").show();
+        });
+        $("#cambio15r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio15r").click(function(){
+          $("#oculto15").show();
+        });
+        $("#cambio16").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio16").click(function(){
+          $("#oculto16").show();
+        });
+        $("#cambio16r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio16r").click(function(){
+          $("#oculto16").show();
+        });
+        $("#cambio17").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio17").click(function(){
+          $("#oculto17").show();
+        });
+        $("#cambio17r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio17r").click(function(){
+          $("#oculto17").show();
+        });
+        $("#cambio18").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio18").click(function(){
+          $("#oculto18").show();
+        });
+        $("#cambio18r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio18r").click(function(){
+          $("#oculto18").show();
+        });
+        $("#cambio19").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio19").click(function(){
+          $("#oculto19").show();
+        });
+        $("#cambio19r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio19r").click(function(){
+          $("#oculto19").show();
+        });
+        $("#cambio20").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio20").click(function(){
+          $("#oculto20").show();
+        });
+        $("#cambio20r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio20r").click(function(){
+          $("#oculto20").show();
+        });
+        $("#cambio21").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio21").click(function(){
+          $("#oculto21").show();
+        });
+        $("#cambio21r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio21r").click(function(){
+          $("#oculto21").show();
+        });
+        $("#cambio22").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio22").click(function(){
+          $("#oculto22").show();
+        });
+        $("#cambio22r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio22r").click(function(){
+          $("#oculto22").show();
+        });
+        $("#cambio23").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio23").click(function(){
+          $("#oculto23").show();
+        });
+        $("#cambio23r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio23r").click(function(){
+          $("#oculto23").show();
+        });
+        $("#cambio24").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio24").click(function(){
+          $("#oculto24").show();
+        });
+        $("#cambio24r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio24r").click(function(){
+          $("#oculto24").show();
+        });
+        $("#cambio25").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio25").click(function(){
+          $("#oculto25").show();
+        });
+        $("#cambio25r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio25r").click(function(){
+          $("#oculto25").show();
+        });
+        $("#cambio26").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio26").click(function(){
+          $("#oculto26").show();
+        });
+        $("#cambio26r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio26r").click(function(){
+          $("#oculto26").show();
+        });
+        $("#cambio27").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio27").click(function(){
+          $("#oculto27").show();
+        });
+        $("#cambio27r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio27r").click(function(){
+          $("#oculto27").show();
+        });
+        $("#cambio28").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio28").click(function(){
+          $("#oculto28").show();
+        });
+        $("#cambio28r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio28r").click(function(){
+          $("#oculto28").show();
+        });
+        $("#cambio29").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio29").click(function(){
+          $("#oculto29").show();
+        });
+        $("#cambio29r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio29r").click(function(){
+          $("#oculto29").show();
+        });
+        $("#cambio30").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio30").click(function(){
+          $("#oculto30").show();
+        });
+        $("#cambio30r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio30r").click(function(){
+          $("#oculto30").show();
+        });
+        $("#cambio31").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio31").click(function(){
+          $("#oculto31").show();
+        });
+        $("#cambio31r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio31r").click(function(){
+          $("#oculto31").show();
+        });
+        $("#cambio32").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio32").click(function(){
+          $("#oculto32").show();
+        });
+        $("#cambio32r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio32r").click(function(){
+          $("#oculto32").show();
+        });
+        $("#cambio33").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio33").click(function(){
+          $("#oculto33").show();
+        });
+        $("#cambio33r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio33r").click(function(){
+          $("#oculto33").show();
+        });
+        $("#cambio34").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio34").click(function(){
+          $("#oculto34").show();
+        });
+        $("#cambio34r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio34r").click(function(){
+          $("#oculto34").show();
+        });
+        $("#cambio35").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio35").click(function(){
+          $("#oculto35").show();
+        });
+        $("#cambio35r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio35r").click(function(){
+          $("#oculto35").show();
+        });
+        $("#cambio36").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio36").click(function(){
+          $("#oculto36").show();
+        });
+        $("#cambio36r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio36r").click(function(){
+          $("#oculto36").show();
+        });
+        $("#cambio37").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio37").click(function(){
+          $("#oculto37").show();
+        });
+        $("#cambio37r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio37r").click(function(){
+          $("#oculto37").show();
+        });
+        $("#cambio38").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio38").click(function(){
+          $("#oculto38").show();
+        });
+        $("#cambio38r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio38r").click(function(){
+          $("#oculto38").show();
+        });
+        $("#cambio39").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio39").click(function(){
+          $("#oculto39").show();
+        });
+        $("#cambio39r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio39r").click(function(){
+          $("#oculto39").show();
+        });
+        $("#cambio40").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio40").click(function(){
+          $("#oculto40").show();
+        });
+        $("#cambio40r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio40r").click(function(){
+          $("#oculto40").show();
+        });
+        $("#cambio41").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio41").click(function(){
+          $("#oculto41").show();
+        });
+        $("#cambio41r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio41r").click(function(){
+          $("#oculto41").show();
+        });
+        $("#cambio42").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio42").click(function(){
+          $("#oculto42").show();
+        });
+        $("#cambio42r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio42r").click(function(){
+          $("#oculto42").show();
+        });
+        $("#cambio43").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio43").click(function(){
+          $("#oculto43").show();
+        });
+        $("#cambio43r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio43r").click(function(){
+          $("#oculto43").show();
+        });
+        $("#cambio44").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio44").click(function(){
+          $("#oculto44").show();
+        });
+        $("#cambio44r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio44r").click(function(){
+          $("#oculto44").show();
+        });
+        $("#cambio45").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio45").click(function(){
+          $("#oculto45").show();
+        });
+        $("#cambio45r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio45r").click(function(){
+          $("#oculto45").show();
+        });
+        $("#cambio46").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio46").click(function(){
+          $("#oculto46").show();
+        });
+        $("#cambio46r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio46r").click(function(){
+          $("#oculto46").show();
+        });
+        $("#cambio47").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio47").click(function(){
+          $("#oculto47").show();
+        });
+        $("#cambio47r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio47r").click(function(){
+          $("#oculto47").show();
+        });
+        $("#cambio48").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio48").click(function(){
+          $("#oculto48").show();
+        });
+        $("#cambio48r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio48r").click(function(){
+          $("#oculto48").show();
+        });
+        $("#cambio49").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio49").click(function(){
+          $("#oculto49").show();
+        });
+        $("#cambio49r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio49r").click(function(){
+          $("#oculto49").show();
+        });
+        $("#cambio50").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio50").click(function(){
+          $("#oculto50").show();
+        });
+        $("#cambio50r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio50r").click(function(){
+          $("#oculto50").show();
+        });
+        $("#cambio51").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio51").click(function(){
+          $("#oculto51").show();
+        });
+        $("#cambio51r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio51r").click(function(){
+          $("#oculto51").show();
+        });
+        $("#cambio52").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio52").click(function(){
+          $("#oculto52").show();
+        });
+        $("#cambio52r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio52r").click(function(){
+          $("#oculto52").show();
+        });
+        $("#cambio53").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio53").click(function(){
+          $("#oculto53").show();
+        });
+        $("#cambio53r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio53r").click(function(){
+          $("#oculto53").show();
+        });
+        $("#cambio54").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio54").click(function(){
+          $("#oculto54").show();
+        });
+        $("#cambio54r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio54r").click(function(){
+          $("#oculto54").show();
+        });
+        $("#cambio55").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio55").click(function(){
+          $("#oculto55").show();
+        });
+        $("#cambio55r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio55r").click(function(){
+          $("#oculto55").show();
+        });
+        $("#cambio56").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio56").click(function(){
+          $("#oculto56").show();
+        });
+        $("#cambio56r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio56r").click(function(){
+          $("#oculto56").show();
+        });
+        $("#cambio57").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio57").click(function(){
+          $("#oculto57").show();
+        });
+        $("#cambio57r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio57r").click(function(){
+          $("#oculto57").show();
+        });
+        $("#cambio58").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio58").click(function(){
+          $("#oculto58").show();
+        });
+        $("#cambio58r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio58r").click(function(){
+          $("#oculto58").show();
+        });
+        $("#cambio59").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio59").click(function(){
+          $("#oculto59").show();
+        });
+        $("#cambio59r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio59r").click(function(){
+          $("#oculto59").show();
+        });
+        $("#cambio60").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio60").click(function(){
+          $("#oculto60").show();
+        });
+        $("#cambio60r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio60r").click(function(){
+          $("#oculto60").show();
+        });
+        $("#cambio61").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio61").click(function(){
+          $("#oculto61").show();
+        });
+        $("#cambio61r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio61r").click(function(){
+          $("#oculto61").show();
+        });
+        $("#cambio62").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio62").click(function(){
+          $("#oculto62").show();
+        });
+        $("#cambio62r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio62r").click(function(){
+          $("#oculto62").show();
+        });
+        $("#cambio63").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio63").click(function(){
+          $("#oculto63").show();
+        });
+        $("#cambio63r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio63r").click(function(){
+          $("#oculto63").show();
+        });
+        $("#cambio64").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio64").click(function(){
+          $("#oculto64").show();
+        });
+        $("#cambio64r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio64r").click(function(){
+          $("#oculto64").show();
+        });
+        $("#cambio65").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio65").click(function(){
+          $("#oculto65").show();
+        });
+        $("#cambio65r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio65r").click(function(){
+          $("#oculto65").show();
+        });
+        $("#cambio66").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio66").click(function(){
+          $("#oculto66").show();
+        });
+        $("#cambio66r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio66r").click(function(){
+          $("#oculto66").show();
+        });
+        $("#cambio67").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio67").click(function(){
+          $("#oculto67").show();
+        });
+        $("#cambio67r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio67r").click(function(){
+          $("#oculto67").show();
+        });
+        $("#cambio68").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio68").click(function(){
+          $("#oculto68").show();
+        });
+        $("#cambio68r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio68r").click(function(){
+          $("#oculto68").show();
+        });
+        $("#cambio69").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio69").click(function(){
+          $("#oculto69").show();
+        });
+        $("#cambio69r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio69r").click(function(){
+          $("#oculto69").show();
+        });
+        $("#cambio70").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio70").click(function(){
+          $("#oculto70").show();
+        });
+        $("#cambio70r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio70r").click(function(){
+          $("#oculto70").show();
+        });
+        $("#cambio71").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio71").click(function(){
+          $("#oculto71").show();
+        });
+        $("#cambio71r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio71r").click(function(){
+          $("#oculto71").show();
+        });
+        $("#cambio72").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio72").click(function(){
+          $("#oculto72").show();
+        });
+        $("#cambio72r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio72r").click(function(){
+          $("#oculto72").show();
+        });
+        $("#cambio73").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio73").click(function(){
+          $("#oculto73").show();
+        });
+        $("#cambio73r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio73r").click(function(){
+          $("#oculto73").show();
+        });
+        $("#cambio74").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio74").click(function(){
+          $("#oculto74").show();
+        });
+        $("#cambio74r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio74r").click(function(){
+          $("#oculto74").show();
+        });
+        $("#cambio75").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio75").click(function(){
+          $("#oculto75").show();
+        });
+        $("#cambio75r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio75r").click(function(){
+          $("#oculto75").show();
+        });
+        $("#cambio76").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio76").click(function(){
+          $("#oculto76").show();
+        });
+        $("#cambio76r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio76r").click(function(){
+          $("#oculto76").show();
+        });
+        $("#cambio77").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio77").click(function(){
+          $("#oculto77").show();
+        });
+        $("#cambio77r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio77r").click(function(){
+          $("#oculto77").show();
+        });
+        $("#cambio78").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio78").click(function(){
+          $("#oculto78").show();
+        });
+        $("#cambio78r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio78r").click(function(){
+          $("#oculto78").show();
+        });
+        $("#cambio79").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio79").click(function(){
+          $("#oculto79").show();
+        });
+        $("#cambio79r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio79r").click(function(){
+          $("#oculto79").show();
+        });
+        $("#cambio80").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio80").click(function(){
+          $("#oculto80").show();
+        });
+        $("#cambio80r").click(function(){
+          $(".ocultox").hide();
+        });
+        $("#cambio80r").click(function(){
+          $("#oculto80").show();
+        });
+        
+        
+      });
+      
+      function cambio1(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/mapa_de_ruta_curso_avanzado_v2.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Mapa de ruta curso avanzado</b>';
+      }
+      function cambio2(){ 
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/guia_aprendizaje.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje</b>';
+      }
+      function cambio3(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/puntos_esenciales.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales</b>';
+      }
+      function cambio4(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/fJqBjeQ_dds?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Entender las emociones y su importancia</b><small><br><b>¿Qué son las emociones? (I)</b></small>';
+      }
+      function cambio5(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/pXPn-lCZeu4?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Entender las emociones y su importancia</b><small><br><b>¿Qué son las emociones? (II)</b></small>';
+        }
+      function cambio6(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/Syj7goxSQYg?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Entender las emociones y su importancia</b><small><br><b>¿Qué son las emociones? (III)</b></small>';
+        }
+        function cambio7(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/la_linea_de_la_vida.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Entender las emociones y su importancia</b><small><br><b>Para reflexionar</b></small>';
+        }
+        function cambio8(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/yBRxIpLuKGk?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Cómo influyen las emociones en nuestra experiencia de vida</b><small><br><b>Las emociones y el aprendizaje (I)<b><br>Introducción: Hemos visto la importancia de las emociones en distintos ámbitos de la vida. Nos falta un aspecto fundamental ¿Cómo influyen las emociones en el aprendizaje?</small>';
+        }        
+        function cambio9(){
+          top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/fa5eC3wJRpU?rel=0&enablejsapi=1';
+          document.getElementById('textintro').innerHTML = '<b>2.- Cómo influyen las emociones en nuestra experiencia de vida</b><small><br><b>Las emociones y el aprendizaje (II))<b></small>';
+        }
+        function cambio10(){
+          top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/Material para descarga/como_influyen_las_emociones.pdf';
+          document.getElementById('textintro').innerHTML = '<b>2.- Cómo influyen las emociones en nuestra experiencia de vida</b><small><br><b>Cómo influyen las emociones en nuestra experiencia de vida</b><br>Lectura.- La importancia de las emociones en la vida</small>';
+        }
+        function cambio11(){
+          top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/KY6PdW9u5Cc?rel=0&enablejsapi=1';
+          document.getElementById('textintro').innerHTML = '<b>3.- Las emociones como proceso</b><small><br><b>El episodio emocional en cinco fases (I)</b><br>Introducción: En esta cápsula conoceremos la emoción como un proceso. Analicemos las fases del mismo utilizando el caso que acabamos de revisar.<br>-La emoción como proceso.<br>-Las cinco fases del proceso emocional<br>-El periodo refractario.</small>';
+        }
+        function cambio12(){
+          top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/Material para descarga/un_caso_de_la_vida_escolar.pdf';
+          document.getElementById('textintro').innerHTML = '<b>3.- Las emociones como proceso</b><small><br><b>Un caso en la vida escolar</b><br>Actividad</small>';
+        }
+      function cambio13(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/uAId7ZoZtd4?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>4.- El funcionamiento del cerebro y las emociones</b><small><br><b>El funcionamiento del cerebro</b><br>Introducción: Ya hemos analizado las emociones en nuestra vida y las emociones como proceso. Nos falta conocer un tercer aspecto fundamental: las emociones y el funcionamiento del cerebro. ¡Veámoslo!<br>-Tres componentes de una emoción: afecto, cognición y conducta.<br>-La experiencia emocional desde la perspectiva científica.<b>-Un modelo de cómo funciona nuestro cerebro durante una emoción: Bunga Bunga y Dr. Cerebro.</small>';
+        }
+      function cambio14(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/F-71N0nCKgA?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>4.- El funcionamiento del cerebro y las emociones</b><small><br><b>Dr Daniel Siegel.- Modelo de la mano</b><br></small>';
+        }
+      function cambio15(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/yxStrXtt6t4'; 
+        document.getElementById('textintro').innerHTML = '<b>4.- El funcionamiento del cerebro y las emociones</b><small><br><b>Recuento y despedida</b><br>Introducción: El siguiente cápsula nos servirá para hacer un recuento de la sesión.<br>-Recapitulación de temas revisados.<br>-Preámbulo a la siguiente sesión.</small>';
+        }
+      function cambio16(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/Recursos complementarios/recursos_complementarios.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Recursos Complementarios</b>';
+        }
+      function cambio17(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/Material para descarga/como_influyen_las_emociones.pdf';
+        document.getElementById('textintro').innerHTML = '<b>La importancia de las emociones en la vida</b>';
+        }
+      function cambio18(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 1.- Conocer las emociones/Material para descarga/un_caso_de_la_vida_escolar.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Un caso en la vida escolar</b>';
+        }
+
+        /*secion 2*/
+      
+      function cambio19(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/guia_aprendizaje_v2.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje</b>';
+        }
+        function cambio20(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/puntos_esenciales_v2.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales</b>';
+        }
+        function cambio21(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/ITHtPgDuL4U?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Emociones que ayudan y emociones que obstaculizan</b><small><br><b>Bienvenido a la sesión 2</b><small>';
+        }
+        function cambio22(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/NfqYyEO8feo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Emociones que ayudan y emociones que obstaculizan</b><small><br><b>Definición de emociones constructivas y destructivas</b><br>Las emociones se pueden clasificar de diferentes formas. Incluso existen emociones que son constructivas y desagradables a la vez, o agradables y destructivas ¿lo sabías? Vamos a revisarlo en las próximas dos cápsulas. En la primera de ellas, analicemos diferentes clasificaciones de las emociones.<small>';
+        }
+        function cambio23(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/clasificar_emociones.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Emociones que ayudan y emociones que obstaculizan</b><small><br><b>Clasificar emociones (I)</b><br>Comencemos con una actividad para reflexionar.<br>Sigue estas instrucciones:<br>Durante un minuto, elabora una lista de emociones, escribe tantas como puedas.<small>';
+        }
+        function cambio24(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/clasificar_emociones_2.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Emociones que ayudan y emociones que obstaculizan</b><small><br><b>Clasificar emociones (II)</b><br>De la lista de emociones que escribiste, ¿cuáles consideras que son constructivas y cuáles destructivas? Clasifícalas en la siguiente tabla.<small>';
+        }
+      function cambio25(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/clasificar_emociones_3.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Emociones que ayudan y emociones que obstaculizan</b><small><br><b>Clasificar emociones (III)</b><br>Si estás haciendo esta sesión en grupo compara tu lista y clasificación con las de tus compañeros. Si estás solo, revisa os ejemplos de la profesora Rosa y el profesor Jorge y observa en qué se diferencian de las tuyas.<small>';
+        }
+        function cambio26(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/El_aspecto_dual_de_las_emociones.pdf';
+        document.getElementById('textintro').innerHTML = '<b>2.- El aspecto dual de las emociones</b><small><br><b>El aspecto dual de las emociones</b><br>Podrás ver el nombre de diferentes emociones y podrás elegir si son constructivas, destructivas o a veces uno, a veces otro. Avanza en la presentación a través de los botones de acción que encontrarás.</small>';
+        }
+      function cambio27(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/iXzJFXpxa9Q?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- El aspecto dual de las emociones</b><small><br><b>¿Cuándo son destructivas las emociones?</b><br>Introducción: Y en la siguiente cápsula, diferenciaremos entre emociones constructivas/ destructivas y emociones agradables/desagradables.<br>- Diferencia entre emociones destructivas y desagradables y entre constructivas y agradables.</small>';
+        }
+        function cambio28(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/el_costo_de_las_emociones_destructivas.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- Emociones destructivas</b><br><small><b>El costo de las emociones destructivas</b><br>Introducción: Para responder a la pregunta acerca de si estamos ante una emoción destructiva planteada en la actividad anterior, realicemos el siguiente ejercicio de reflexión:<br>Piensa en algún momento en el que hayas experimentado una emoción destructiva como enojo, apego o envidia y contesta las siguientes preguntas.</small>';
+        }
+        function cambio29(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/Material para descarga/rasgos_comunes_de_las_emociones_destructivas.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- Emociones destructivas</b><br><small><b>Rasgos comunes de las emociones destructivas</b><br>Introducción: Y para conocer los rasgos comunes de las emociones destructivas, revisemos la siguiente presentación.</small>';
+        }
+        function cambio30(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/jqwR-s3w_kQ?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>4.- Las emociones constructivas</b><br><small><b>Las emociones constructivas</b><br>Introducción: Ahora analicemos las emociones constructivas ¿Cómo nos hacen sentir estas emociones? ¡Veamos la siguiente cápsula!</small>';
+        }
+        function cambio31(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/referencias_de_otros_programas_de_hse.pdf';
+        document.getElementById('textintro').innerHTML = '<b>4.- Las emociones constructivas</b><br><small><b>Reclasificar las emociones</b><br>Introducción: Después de revisar los contenidos sobre emociones constructivas y destructivas, te proponemos que vuelvas a realizar el ejercicio que hiciste al inicio de la sesión.<br>1. Revisa la clasificación de emociones que hiciste al inicio de esta sesión.<br>2. Después de lo que hemos discutido, considera si moverías alguna de lugar. Utiliza la tabla que te presentamos a continuación para hacer tu nueva clasificación. Si haces cambio explica por qué.</small>';
+        }
+        function cambio32(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/dWz8v6Mr-Bc?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>5.- El lenguaje emocional</b><small><br><b>El lenguaje emocional</b></small>';
+        }
+        function cambio33(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/el_diccionario_de_las_emociones.pdf';
+        document.getElementById('textintro').innerHTML = '<b>5.- El lenguaje emocional</b><small><br><b>El diccionario de las emociones</b><br>Introducción: ¿Te gustaría ampliar tu lenguaje emocional? Antes de pasar a la evaluación, te invitamos a jugar con el diccionario de las emociones. </small>';
+        }
+      function cambio34(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/Recursos complementarios/El_termometro_del_estado_de_animo_de_RULER.pdf';
+        document.getElementById('textintro').innerHTML = '<b>El termómetro de las emociones</b>';
+        }
+      function cambio35(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/Recursos complementarios/recurso_complementario_sesion_2.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Recurso Complementario</b>';
+        }
+      function cambio36(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 2.- Emociones que ayudan y emociones que obstaculizan/Material para descarga/rasgos_comunes_de_las_emociones_destructivas.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Rasgos comunes y desventajas de emociones destructivas</b>';
+        }
+
+        /*sesion 3*/
+
+      function cambio37(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/guia_aprendizaje_v3.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje</b>';
+        }
+      function cambio38(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/puntos_esenciales_v3.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales</b>';
+        }
+      function cambio39(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/c9I6SHy8VfU?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Cómo trabajar las emociones destructivas</b><small><br><b>Bienvenido a la sesión 3</b></small>';
+        }
+      function cambio40(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/wi0pfd0iEAY?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Cómo trabajar las emociones destructivas</b><small><br><b>Cómo trabajar con emociones destructivas</b><br>Introducción. En esta cápsula analizaremos cómo trabajar las emociones destructivas, mediante cuatro útiles herramientas: cambio de la situación, modulación de la respuesta, despliegue atencional y cambio cognitivo.<br>-Introducción.<br>-Distintos modelos y estrategias.</small>';
+        }
+      function cambio41(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/5oi7OKzR1cM?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Cómo trabajar las emociones destructivas</b><small><br><b>Un modelo de la mente: regular emociones a través de calmar la mente y técnica de atención al respirar. (I)</b><br>Introducción: ¿Cómo nos ayuda mover la atención a la respiración para calmar y lograr claridad en nuestra mente? Respondamos a esta pregunta revisando el siguiente video temático y realizando la técnica de atención al respirar.<br>- Modelo de la mente.</small>';
+        }
+        function cambio42(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/LETVHXUs110?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Cómo trabajar las emociones destructivas</b><small><br><b>La atención del respirar.</b><br>Introducción: ¿Cómo nos ayuda mover la atención a la respiración para calmar y lograr claridad en nuestra mente? Respondamos a esta pregunta revisando el siguiente video temático y realizando la técnica de atención al respirar.<br>- Técnica de la atención del respirar.</small>';
+        }
+        function cambio43(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/8nQEqiknAm4?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Cómo trabajar las emociones destructivas</b><small><br><b>Un modelo de la mente: regular emociones a través de calmar la mente y técnica de atención al respirar. (II)</b></small>';
+        }
+        function cambio44(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/1soeAaR_ORQ?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Cómo trabajar las emociones destructivas</b><small><br><b>La atención del respirar</b><br>Introducción: ¿Cómo nos ayuda mover la atención a la respiración para calmar y lograr claridad en nuestra mente? Respondamos a esta pregunta revisando el siguiente video temático y realizando la técnica de atención al respirar.<br>- Técnica de atención del respirar.</small>';
+        }
+      function cambio45(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/vale_la_pena.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Cómo trabajar las emociones destructivas</b><small><br><b>¿Vale la pena?</b><br>Introducción: Antes de comenzar, te pedimos contestar las siguientes preguntas. Al terminar, recuerda realizar la autoevaluación.</small>';
+        }
+        function cambio46(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/_sG7QBJfPn0?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Regular las emociones a través de entrenar la atención</b><br><small><b>¿Qué es la atención?</b><br>Introducción: Adentrémonos un poco más en el mundo de la atención viendo las siguientes cápsulas. Empecemos por:<br>- ¿Cómo definimos atención?<br>-¿Qué es la atención?</small>';
+        }
+        function cambio47(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/MVC-DLWAw2E?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Regular las emociones a través de entrenar la atención</b><br><small><b>Los desbalances de la atención</b><br>Introducción: ¿Por qué tenemos desbalances de atención? ¿Qué tipos de desbalances existen?. Veamos esta otra cápsula.<br>-Los desbalances de la atención.</small>';
+        }
+      function cambio48(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Material para descargar/la_regulacion_de_la_atencion_para_el_desarrollo_de_HSE.pdf';
+        document.getElementById('textintro').innerHTML = '<b>2.- Regular las emociones a través de entrenar la atención</b><br><small><b>La regulación de la atención para el desarrollo de HSE</b><br>Introducción: Sigamos aprendiendo más sobre la regulación de la atención. Te invitamos a revisar la siguiente presentación. En ella analizaremos:<br>- La definición de atención.<br>- ¿Qué implica regular la atención?<br>- Desventajas de una atención en desbalance.<br>- Ventajas de una mente balanceada.</small>';
+        }
+      function cambio49(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/nkvCNO6l9y4?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- Desventajas, ventajas y potencial de entrenar la atención</b><br><small><b>¿Nos conviene entrenar la atención?</b><br>Introducción: Ya has identificado el enorme costo de los desbalances de atención. Veamos en la siguiente cápsula y en el infográfico, los problemas más comunes de una atención disfuncional y las ventajas de entrenarla.<br>-¿Nos conviene entrenar la atención?<br>-Los beneficios de una mente en balance.</small>';
+        }
+      function cambio50(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/EveUzFNePRw?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- Desventajas, ventajas y potencial de entrenar la atención</b><br><small><b>PARAR (I)</b><br>Introducción: Hemos avanzado en la regulación de la atención. Ahora presentamos una técnica para entrenarla y alcanzar los beneficios de una mente en balance. ¡Veamos la siguiente cápsula!</small>';
+        }
+      function cambio51(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/u68lket7wcU?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- Desventajas, ventajas y potencial de entrenar la atención</b><br><small><b>PARAR (II)</b><br>Introducción: Hemos avanzado en la regulación de la atención. Ahora presentamos una técnica para entrenarla y alcanzar los beneficios de una mente en balance. ¡Veamos la siguiente cápsula!<br>-PARAR: una técnica para entrenar la atención en tu vida cotidiana, en cualquier lugar y en cualquier momento.</small>';
+        }
+      function cambio52(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/atencion.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- Desventajas, ventajas y potencial de entrenar la atención</b><br><small><b>¡Atención!</b><br>Introducción: Ahora que ya conocemos mejor nuestra atención y sus desbalances, hagamos un ejercicio de reflexión:</small>';
+        }
+        function cambio53(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Material para descargar/ciencia_de_la_atencion.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- Desventajas, ventajas y potencial de entrenar la atención</b><br><small><b>Infografía.- La ciencia de la atención: ¿Nos conviene entrenarla? Y la atención en la educación</b>';
+        }
+        function cambio54(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/xrfPGPwEd90?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>4.- La atención como habilidad transversal para el desarrollo de HSE</b><br><small><b>La atención como habilidad transversal para el desarrollo de HSE</b><br>Introducción: Al concluir la sesión, nos gustaría volver a preguntarte tu opinión sobre el entrenamiento de la atención. Recuerda responder la pregunta de autoevaluación que aparece al final.<br>-La atención como habilidad transversal para el desarrollo de HSE<br>- Recuento y despedida</small>';
+        }
+      function cambio55(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/vale_la_pena_reconsideracion.pdf';
+        document.getElementById('textintro').innerHTML = '<b>4.- La atención como habilidad transversal para el desarrollo de HSE</b><br><small><b>¿Vale la pena? (Reconsideración)</b><br>Introducción: Al concluir la sesión, nos gustaría volver a preguntarte tu opinión sobre el entrenamiento de la atención. Recuerda responder la pregunta de autoevaluación que aparece al final.</small>';
+        }
+        function cambio56(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Recursos complementarios/atencion_al_respirar.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Atención al respirar</b>';
+        }
+        function cambio57(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Recursos complementarios/atencion_al_respirar.mp3';
+        document.getElementById('textintro').innerHTML = '<b>Atención al respirar</b>';
+        }
+        function cambio58(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Recursos complementarios/atencion_a_la_respiracion.mp3';
+        document.getElementById('textintro').innerHTML = '<b>Audio técnica: Atención a la respiración contando</b>';
+        }
+      function cambio59(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Recursos complementarios/recurso_complementario_sesion_3.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Recurso Complementario</b>';
+        }
+        function cambio60(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Material para descargar/ciencia_de_la_atencion.pdf';
+        document.getElementById('textintro').innerHTML = '<b>La ciencia de la atención</b>';
+        }
+        function cambio61(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 3.- Cómo regular las emociones I estrategias atencionales/Material para descargar/la_regulacion_de_la_atencion_para_el_desarrollo_de_HSE.pdf';
+        document.getElementById('textintro').innerHTML = '<b>La regulación de la atención</b>';
+        }
+
+        /*sesion 4*/
+
+      function cambio62(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/guia_aprendizaje_v4.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Guía de aprendizaje</b>';
+        }
+        function cambio63(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/puntos_esenciales_v4.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Puntos esenciales</b>';
+        }
+        function cambio64(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/qEoxQCq_HPw?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Regular las emociones a través del cambio cognitivo</b><br><small><b>Cómo generar un cambio</b><br>Introducción: Para empezar, te presentamos una cápsula con una nueva estrategia de regulación emocional: El cambio cognitivo. ¡Veamos en qué consiste!<br>-Introducción.<br>-Estrategia: cómo generar un cambio cognitivo que nos permita ver lo que sentimos desde otra perspectiva.</small>';
+        }
+        function cambio65(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/OZELLXDLDcY?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Regular las emociones a través del cambio cognitivo</b><br><small><b>La historia de la serpiente (I)</b><br>Introducción: La siguiente historia nos ayudará a identificar situaciones donde experimentamos confusión mental o falta de claridad.<br>- La historia de la serpiente.<br>- Confundir nuestra interpretación con la realidad y reaccionar sin cuestionarnos.<br>- Una mente en calma y clara es la base del cultivo de la claridad y el discernimiento.</small>';
+        }
+        function cambio66(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/oqS4hbskZZo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>1.- Regular las emociones a través del cambio cognitivo</b><br><small><b>La historia de la serpiente (II)</b><br>Introducción: La siguiente historia nos ayudará a identificar situaciones donde experimentamos confusión mental o falta de claridad.<br>- La historia de la serpiente.<br>- Confundir nuestra interpretación con la realidad y reaccionar sin cuestionarnos.<br>- Una mente en calma y clara es la base del cultivo de la claridad y el discernimiento.</small>';
+        }
+        function cambio67(){
+        top.frames['vidframe'].location.href = 'http://www.construye-t.org.mx/resources/cursos/emociones/vale_la_pena.pdf';
+        document.getElementById('textintro').innerHTML = '<b>1.- Regular las emociones a través del cambio cognitivo</b><br><small><b>Explorar nuestras serpientes</b><br>Introducción. Ya con la mente más clara, realiza el siguiente ejercicio de reflexión.</small>';
+        }
+      function cambio68(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/3_minutos_para_aquietar_la_mente.mp3';
+        document.getElementById('textintro').innerHTML = '<b>1.- Regular las emociones a través del cambio cognitivo</b><br><small><b>3 minutos para aquietar la mente</b>';
+        }
+      function cambio69(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/Q1TfhdizH5A?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Las ventajas de una mente clara que discierne</b><br><small><b>Una mente clara, el antídoto de la confusión</b><br>Introducción: En el bloque anterior nos centramos en las situaciones de confusión mental. Exploremos ahora las ventajas de una mente clara.<br>-La claridad es el uso de la inteligencia para evaluar de forma sistemática la objetividad de los propios pensamientos y juicios.</small>';
+        }
+      function cambio70(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/cD1nkJXeMMo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Las ventajas de una mente clara que discierne</b><br><small><b>Empatía Clínica</b></small>';
+        }
+      function cambio71(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/V99a6GpjqvI?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Las ventajas de una mente clara que discierne</b><br><small><b>Revaloración cognitiva: Ver con otros ojos<b><br>Introducción: El cambio cognitivo e identificar diferentes perspectivas de la realidad, nos ayudar a pensar, interpretar y actuar de una forma más objetiva. Veamos más al respecto en la siguiente cápsula y en el video.<br>- Valorar la situación desde otro punto de vista permite cambiar nuestros pensamientos, lo que sentimos, y la forma en que actuamos.</small>';
+        }
+      function cambio72(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/fj__g4_1vSo?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>2.- Las ventajas de una mente clara que discierne</b><br><small><b>Revaloración cognitiva: Ver con otros ojos (II)</b><br>Introducción: El cambio cognitivo e identificar diferentes perspectivas de la realidad, nos ayudar a pensar, interpretar y actuar de una forma más objetiva. Veamos más al respecto en la siguiente cápsula y en el video.<br>- Valorar la situación desde otro punto de vista permite cambiar nuestros pensamientos, lo que sentimos, y la forma en que actuamos.</small>';
+        }
+        function cambio73(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/Material para descarga/que_ves_aqui.pdf';
+        document.getElementById('textintro').innerHTML = '<b>2.- Las ventajas de una mente clara que discierne</b><br><small><b>¿Qué ves aquí?</b><br>Introducción: Sigamos explorando nuestra mente. Ahora, te queremos presentar un ejercicio visual sobre las diferentes perspectivas al analizar una situación. ¿Qué ves aquí?</small>';
+        }
+      function cambio74(){
+        top.frames['vidframe'].location.href = 'https://www.youtube.com/embed/ugG9WiYpxVc?rel=0&enablejsapi=1';
+        document.getElementById('textintro').innerHTML = '<b>3.- La claridad mental como herramienta transversal</b><br><small><b>Cierre</b><br>Introducción: Terminemos esta sesión con una cápsula de cierre. ¡Enhorabuena, has terminado todas las sesiones de este módulo! Realiza la evaluación correspondiente en el siguiente aparatado y nos vemos en el siguiente módulo.<br>-Recuento.</small>';
+        }
+      function cambio75(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/claridad_mental.pdf';
+        document.getElementById('textintro').innerHTML = '<b>3.- La claridad mental como herramienta transversal</b><br><small><b>Claridad mental y disposiciones mentales: la importancia de entender cómo pensamos</b><br>Introducción: Finalmente, analizaremos la claridad mental como una de las habilidades transversales del programa Construye T. ¿Cómo esta habilidad favorece el sentido de eficacia y la mentalidad de crecimiento en tus estudiantes?</small>';
+        }
+      function cambio76(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/Recursos complementarios/recurso_complementario_sesion_4.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Recursos complementarios</b><br><small><b>Recurso Complementario</b>';
+        }
+      function cambio77(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/Recursos complementarios/lectura_claridad_mental.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Recursos complementarios</b><br><small><b>Claridad mental y disposiciones mentales</b>';
+        }
+      function cambio78(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/Recursos complementarios/lectura_claridad_mental.pdf';
+        document.getElementById('textintro').innerHTML = '<b>Recursos complementarios</b><br><small><b>Claridad mental y mentalidad de crecimiento</b>';
+        }
+      function cambio79(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/Material para descarga/que_ves_aqui.pdf';
+        document.getElementById('textintro').innerHTML = '<b>¿Qué ves aquí?</b>';
+        }
+      function cambio80(){
+        top.frames['vidframe'].location.href = 'CURSO AVANZADO/Conocer y regular emociones/Sesión 4.- Cómo regular las emociones II estrategias cognitivas/Material para descarga/claridad_mental (1).pdf';
+        document.getElementById('textintro').innerHTML = '<b>Claridad mental</b>';
+        }
+    </script>
+  </div>
+
+
+<br><br>
+
+
+
+
+
+ 
+
+
+  
+
+
+
+
+
+
+<!-- aqui va el texto del footer -->
+
+
+
+<div class="footer">
+<div class="container">
+  <div class="col-sm-4">
+    <br><br>
+    <h5>Enlaces</h5><br>
+
+
+    <a target="_blank" href="http://reformas.gob.mx/" style="color: white;"> Reformas</a><br>
+    <a target="_blank" href="http://portaltransparencia.gob.mx/buscador/search/search.do?method=begin" style="color: white;"> Portal de Obligaciones de Transparencia</a><br>
+    <a target="_blank" href="https://www.infomex.org.mx/gobiernofederal/home.action" style="color: white;"> Sistema Infomex</a><br>
+    <a target="_blank" href="http://inicio.ifai.org.mx/SitePages/ifai.aspx" style="color: white;">INAI</a><br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <img src="img/gob_mx.jpg"> <br> <br> <br> <br>
+  </div>
+  <div class="col-sm-4">
+    <br><br>
+    <h5>¿Qué es gob.mx?</h5><br>
+
+    Es el portal único de trámites, información y participación ciudadana. <a target="_blank" href="https://www.gob.mx/que-es-gobmx" style="color: white;">Leer más</a><br>
+
+    <a target="_blank" href="https://www.gob.mx/en/index" style="color: white;"> English</a><br>
+    <a target="_blank" href="https://www.gob.mx/temas" style="color: white;">Temas</a><br>
+    <a target="_blank" href="https://www.gob.mx/accesibilidad" style="color: white;">Declaración de Accesibilidad</a><br>
+    <a target="_blank" href="https://www.gob.mx/privacidadintegral" style="color: white;">Aviso de privacidad integral</a><br>
+    <a target="_blank" href="https://www.gob.mx/privacidadsimplificado" style="color: white;">Aviso de privacidad simplificado</a><br>
+    <a target="_blank" href="https://www.gob.mx/terminos" style="color: white;">Términos y Condiciones</a><br>
+    <a target="_blank" href="https://www.gob.mx/terminos#medidas-seguridad-informacion" style="color: white;">Política de seguridad</a><br>
+    <a target="_blank" href="http://www.ordenjuridico.gob.mx/" style="color: white;">Marco Jurídico</a><br>
+    <a target="_blank" href="https://www.gob.mx/sitemap" style="color: white;">Mapa de sitio</a><br>
+  </div>
+  <div class="col-sm-4">
+    <br><br>
+    <h5>Contacto</h5><br>
+
+     Mesa de ayuda: dudas e información<br>
+gobmx@funcionpublica.gob.mx<br>
+
+<a target="_blank" href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54" style="color: white;">Denuncia contra servidores públicos</a><br>
+<br>
+
+  </div>
+</div> 
+
+</div>
+
+ 
+
+</body>
+</html>
