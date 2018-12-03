@@ -136,8 +136,8 @@ body {
       color: #000 !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: #fff !important;
+      color: #000 !important;
+      background-color: #eaeaea !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
