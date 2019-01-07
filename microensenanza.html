@@ -30,6 +30,8 @@
 </style>
 <script>
  $(document).ready(function() {
+
+  //AQUI COMIENZA FASE 2
       $("#a1").click(function() {
         $("#pizarra").load("mnz/a1.html");
       });
@@ -93,8 +95,22 @@
          $("#fase2_19").click(function() {
         $("#pizarra").load("mnz/fase2_19.html");
       });
+//AQUI TERMINA FASE 2 *************************************************************************
 
+//********************************************************************** AQUI EMPIEZA DESPEDIDA 
+  $("#fase2_20").click(function() {
+        $("#pizarra").load("mnz/fase2_20.html");
+      });
+  $("#fase2_21").click(function() {
+        $("#pizarra").load("mnz/fase2_21.html");
+      });
+  $("#fase2_22").click(function() {
+        $("#pizarra").load("mnz/fase2_22.html");
+      });
 
+  //AQUI TERMINA DESPEDIDA  *******************************************************************
+
+  //*********************************************************************** AQUI EMPIEZA FASE 1
 
 
     });
@@ -342,14 +358,14 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion4" href="#fs3_1">Biliografía</a>
+          <a data-toggle="collapse" id="fase2_20" data-parent="#accordion4" href="#fs3_1">Cápsula - Cierre del curso</a>
         </h4>
       </div>
       <div id="fs3_1" class="panel-collapse collapse">
         <div class="panel-body">
           <ul>
-            <li><a href="">Fase 1</a></li>
-            <li><a href="">Fase 2</a></li>
+            <li><a href="#" id="fase2_21">Fase 1</a></li>
+            <li><a href="#" id="fase2_22">Fase 2</a></li>
           </ul>
         </div>
       </div>
